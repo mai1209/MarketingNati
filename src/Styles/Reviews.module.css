@@ -1,0 +1,36 @@
+:root {
+  --color-amarillo: #ffd700;
+  --color-verde: #004d40;
+  --color-text: #fff;
+  --color-azul: #1e3a8a;
+  --color-blanco: #d1d0cf;
+}
+
+.container{
+    height: 100vh;
+    background-color: #004d40;
+}
+
+h2{
+    color: var(--color-text);
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: start;
+    margin-left: 150px;
+}
+
+.text{
+    color: var(--color-text);
+    font-size: 20px;
+    margin-left: 170px;
+    padding-top: 20px;
+}
+
+.carrusel{
+    height: 600px;
+    width: 900px;
+    background-color: var(--color-azul);
+    margin: 40px auto;
+    
+}

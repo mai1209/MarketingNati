@@ -1,0 +1,64 @@
+:root {
+  --color-amarillo: #ffd700;
+  --color-verde: #004d40;
+  --color-text: #fff;
+  --color-azul: #1e3a8a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: var(--color-amarillo);
+  height: 100vh;
+}
+
+.nav {
+  background-color: var(--color-verde);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  gap: 15px;
+  padding: 7px 30px 15px 30px;
+  font-weight: 300;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.text {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container_logo_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  flex-wrap: wrap;
+  height: 70%;
+}
+
+.img_nati {
+  width: 270px;
+  height: 380px;
+}
+.img_logo {
+  width: 550px;
+  height: 340px;
+}
+
+.logo_description {
+  color: var(--color-azul);
+  font-style: italic;
+}
+
+.line {
+  height: 20px;
+  width: 60%;
+
+  background-color: var(--color-azul);
+}

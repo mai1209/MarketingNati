@@ -1,0 +1,46 @@
+:root {
+  --color-amarillo: #ffd700;
+  --color-verde: #004d40;
+  --color-text: #fff;
+  --color-azul: #1e3a8a;
+  --color-blanco: #d1d0cf;
+}
+
+.container_banner {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+}
+
+.container_all_text {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.container_text {
+  display: flex;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--color-verde);
+}
+
+.text2 {
+  text-align: center;
+  width: 100%;
+}
+
+.text3 {
+  text-align: end;
+  width: 100%;
+}
+
+.bottom_text {
+  color: var(--color-verde);
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+}

@@ -1,0 +1,43 @@
+:root {
+  --color-amarillo: #ffd700;
+  --color-verde: #004d40;
+  --color-text: #fff;
+  --color-azul: #1e3a8a;
+  --color-blanco: #d1d0cf;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+.container_text {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.line {
+  height: 3px;
+  background-color: #ffd700;
+  width: 80%;
+  margin-top: 80px;
+}
