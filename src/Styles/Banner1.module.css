@@ -9,7 +9,8 @@
 .container_banner {
   display: flex;
   flex-direction: column;
-
+  max-width: 1500px;
+  margin: auto;
   height: 100vh;
 }
 

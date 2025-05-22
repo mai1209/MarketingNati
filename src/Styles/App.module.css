@@ -9,9 +9,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.screen {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 50px);
+}
 .App {
   background-color: var(--color-amarillo);
-  height: 100vh;
 }
 
 .nav {
@@ -56,9 +63,22 @@
   font-style: italic;
 }
 
+@keyframes fillLine {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 60%;
+    opacity: 1;
+  }
+}
+
 .line {
   height: 20px;
-  width: 60%;
-
+  width: 0;
   background-color: var(--color-azul);
+  animation: fillLine 1.2s ease-out forwards;
+  margin-top: 20px; /* opcional */
 }
+

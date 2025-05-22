@@ -13,21 +13,20 @@
   display: flex;
 }
 
-h2 {
+.h2 {
   text-align: center;
-  padding-top: 40px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .container_text {
   align-items: center;
-  gap: 40px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  height: 80%;
+  justify-content: space-between;
   padding: 40px;
-  text-align: center;
-  margin: auto;
+
+
 }
 
 .text {
@@ -41,3 +40,4 @@ h2 {
   width: 80%;
   margin-top: 80px;
 }
+
