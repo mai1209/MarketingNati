@@ -104,7 +104,7 @@
 
 
 .background {
-  background-image: url("../../public/img/fondoAdvice.png");
+  background-image: url("../../public/fondoAdvice.png");
   border-radius: 33px;
   width: 1400px;
   height: 70vh;
@@ -189,24 +189,22 @@ span {
     font-size: 22px;
   }
 
-  .container_text2 {
+.container_text2, .background, .blue {
+    width: 96%; 
+ 
     border-radius: 23px;
-    max-width: 380px;
-    padding: 20px 30px;
-       height: 500px;
+    height: 500px;
   }
 
-.background {
-  border-radius: 23px;
-  width: 380px;
-  height: 500px;
-
-}
   .blue {
-    border-radius: 23px;
-    max-width: 380px;
     top: 10px;
-    height: 500px;
+  }
+  .container_text2 {
+    top: 50px;
+    padding: 40px 30px;
+  }
+  .background {
+    top: 100px;
   }
 
   .bottom_text {

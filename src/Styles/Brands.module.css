@@ -124,11 +124,11 @@ img {
 }
 
 .imgUno {
-   animation: slide 6s linear infinite;
+   animation: slide 25s linear infinite;
 }
 
 .imgDos {
-    animation: slide 6s linear infinite reverse; 
+    animation: slide 25s linear infinite reverse; 
 }
 @keyframes slide {
   from {
@@ -205,8 +205,8 @@ img {
 }
 
 .containerBrands {
- max-width: 350px;
- margin-top: 10px;
+ max-width: 300px;
+ margin-top: 0;
 }
 
 .container {

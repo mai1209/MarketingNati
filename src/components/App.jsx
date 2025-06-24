@@ -5,47 +5,60 @@ import "aos/dist/aos.css";
 //import { IoIosArrowDropup } from "react-icons/io";
 import { HugeiconsIcon } from '@hugeicons/react'
 import { ArrowUpDoubleIcon } from '@hugeicons/core-free-icons'
+import { IoMdClose, IoMdMenu } from "react-icons/io";
+
 
 
 function App() {
   const [showButton, setShowButton] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
-useEffect(() => {
-  AOS.init({ duration: 1000, once: false });
-  const handleScroll = () => {
-    if (window.scrollY > 100) {
-      setShowButton(true);
-      console.log("BOTÓN DEBERÍA MOSTRARSE (estado: true)"); // <-- AÑADE ESTA LÍNEA
-    } else {
-      setShowButton(false);
-      console.log("BOTÓN DEBERÍA OCULTARSE (estado: false)"); // <-- AÑADE ESTA LÍNEA
-    }
+  const toggleMenu = () => {
+    setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen);
+    console.log("INTENTO DE ABRIR/CERRAR MENÚ");
   };
-  window.addEventListener("scroll", handleScroll);
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
 
-  // 6. Función para hacer scroll hacia el top de la página
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowButton(true);
+        console.log("BOTÓN DEBERÍA MOSTRARSE (estado: true)"); // <-- AÑADE ESTA LÍNEA
+      } else {
+        setShowButton(false);
+        console.log("BOTÓN DEBERÍA OCULTARSE (estado: false)"); // <-- AÑADE ESTA LÍNEA
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", 
+      behavior: "smooth",
     });
   };
 
 
   return (
-    <div  className={style.card}>
+    <div className={style.card}>
       <img className={style.fondoAzul} src="./rectangulosAzul.png" alt="fondo" />
       <nav className={style.nav}>
-        <div className={style.containerNav}>
-          <a href="#sobreMi">Sobre mi</a>
-          <a href="#miEnfoque">Mi enfoque</a>
-          <a href="#testimonios">Testimonios</a>
-          <a href="#contacto">Contacto</a>      </div>
+        <button onClick={toggleMenu} className={style.hamburgerButton}>
+          <IoMdMenu size={35} />
+        </button>
+        <div className={`${style.containerNav} ${isMenuOpen ? style.menuOpen : ''}`}>
+          <IoMdClose onClick={toggleMenu} className={style.close} />
+          <a href="#sobreMi" onClick={toggleMenu}>Sobre mi</a>
+          <a href="#miEnfoque" onClick={toggleMenu}>Mi enfoque</a>
+          <a href="#testimonios" onClick={toggleMenu}>Testimonios</a>
+          <a href="#contacto" onClick={toggleMenu}>Contacto</a>
+        </div>
+
         <img className={style.imgLogo} src="./logo.png" alt="logo" />
       </nav>
       <div className={style.container}>
@@ -84,12 +97,12 @@ useEffect(() => {
         </div>
 
       </div>
-       {showButton && (
+      {showButton && (
         <button onClick={scrollToTop} className={style.arrow}>
-       <HugeiconsIcon icon={ArrowUpDoubleIcon} size={50}  />
+          <HugeiconsIcon icon={ArrowUpDoubleIcon} size={55} />
         </button>
       )}
-    
+
     </div>
   );
 }
