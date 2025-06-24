@@ -8,42 +8,50 @@ function App() {
     AOS.init({ duration: 1000, once: false });
   }, []);
   return (
-    <div className={style.App}>
-      <div className={style.nav}>
-        <a href="#inicio" className={style.text}>
-          Inicio
-        </a>
-        <a href="#sobre-mi" className={style.text}>
-          Sobre mí
-        </a>
-        <a href="#enfoque" className={style.text}>
-          Mi enfoque
-        </a>
-        <a href="#testimonios" className={style.text}>
-          Testimonios
-        </a>
-        <a href="#contacto" className={style.text}>
-          Contacto
-        </a>
-      </div>
-      <div className={style.screen}>
-        <div className={style.container_logo_img}>
-          <img
-            className={style.img_logo}
-            data-aos="slide-right" // se mueve desde la izquierda
-            data-aos-duration="2000"
-            data-aos-delay="100"
-            src="/img/logo.png"
-            alt="logo-img"
-          />
+    <div  className={style.card}>
+      <nav className={style.nav}>
+        <div className={style.containerNav}>
+          <a href="#sobreMi">Sobre mi</a>
+          <a href="#miEnfoque">Mi enfoque</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>      </div>
+        <img className={style.imgLogo} src="./logo.png" alt="logo" />
+      </nav>
+      <div className={style.container}>
 
-          <img
-            className={style.img_nati}
-            src="/img/nati.png"
-            alt="nati-img"
-          ></img>
+        <div>
+          <p className={style.slogan}>crea marketing para vos</p>
+          <button className={style.btnMoreInfo}><a href="#btnMoreInfo">quiero saber mas</a></button>
         </div>
-        <div className={style.line} ></div>
+
+        <div className={style.containerInfoNati}>
+          <img className={style.img} src="./imgNati.png" alt="nati-img" />
+          <p className={style.name}>Natalia Lofeudo</p>
+          <p className={style.info}>asesora de marketing y comunicacion</p>
+          <button className={style.btnMore}><a href="#btnMore">Quiero saber mas</a></button>
+        </div>
+        <div className={style.containerDescription}>
+          <div className={style.description}>
+            <p><span>Creación </span>y edición de contenido <br /> auténtico.</p>
+          </div>
+          <div className={style.description}>
+            <p><span>Gestión </span>de proyectos como Project <br /> Manager.</p>
+          </div>
+          <div className={style.description}>
+            <p><span>Acompañamiento </span>presencial u <br /> online.</p>
+          </div>
+          <div className={style.description}>
+            <p><span>Asesoría </span>en marketing y <br />comunicación estratégica.</p>
+          </div>
+          <div className={style.description}>
+            <p><span>Colaboraciones </span>con <br />equipos o marcas.</p>
+          </div>
+          <div className={style.description}>
+            <p><span>Organización</span> y orden interno  <br />para emprendedores.</p>
+          </div>
+
+        </div>
+
       </div>
     </div>
   );

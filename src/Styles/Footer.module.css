@@ -1,0 +1,236 @@
+:root {
+    --color-amarillo: #ffd700;
+    --color-verde: #004d40;
+    --color-text: #fff;
+    --color-azul: #1e3a8a;
+    --color-blanco: #d1d0cf;
+    --color-black: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../../public/fondo\ footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.p {
+    color: var(--color-text);
+    font-size: 50px;
+    font-weight: 600px;
+    max-width: 750px;
+    margin: 200px 100px 100px 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-amarillo);
+    border-radius: 26px;
+    height: fit-content;
+    width: 508px;
+    margin: 0 200px;
+}
+
+form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-amarillo);
+    padding: 5px 0;
+    color: var(--color-text);
+    padding-left: 20px;
+}
+
+form textarea {
+    background: none;
+    border: none;
+    padding: 5px 0;
+    color: var(--color-text);
+    padding-left: 20px;
+}
+
+form textarea::placeholder {
+    color: var(--color-text);
+}
+
+form input::placeholder {
+    color: var(--color-text);
+}
+
+form input:focus-visible {
+  outline: none; 
+  border-color: var(--color-amarillo);
+  box-shadow: 0 0 0 1px var(--color-amarillo); 
+}
+
+form textarea:focus-visible {
+  outline: none; 
+  border-color: var(--color-amarillo);
+  box-shadow: 0 0 0 1px var(--color-amarillo); 
+}
+
+.imageNati {
+    width: 585px;
+    height: 800px;
+    position: absolute;
+    right: 100px;
+    bottom: 5px;
+}
+
+.containerAll {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.containerForm {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-amarillo);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    flex: 1;
+}
+
+.social {
+    flex: 1;
+}
+
+.imgCorreo {
+    width: 15px;
+    height: 15px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.socialText {
+    text-align: center;
+}
+
+.imgRedes {
+    width: 15px;
+    height: 15px;
+}
+
+.containerRedes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 2px;
+}
+
+.btnFooter{
+    background-color: var(--color-amarillo);
+    color: var(--color-verde);
+    padding: 10px 20px;
+    border-radius: 26px;
+    border: none;
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+@media (min-width: 837px) and (max-width: 1600px) {
+    .p {
+        font-size: 35px;
+        margin: 145px 50px 50px 100px;
+      
+    }
+
+   .imageNati {
+    width: 520px;
+    height: 700px;
+
+    right: 10px;
+    bottom: 5px;
+}
+   
+
+ 
+
+
+}
+
+@media (max-width: 836px){
+.container {
+
+    margin-top: 250px;
+  }
+
+  .p {
+    max-width: 370px;
+    font-size: 21px;
+    margin: 120px auto 50px auto;
+    text-align: center ;
+}
+
+  .imageNati {
+        display: none;
+    }
+    .containerAll {
+   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    gap: 20px;
+   
+}
+.mail{
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+form {
+    gap: 20px;
+    padding: 10px;
+    width: 350px;
+    margin: 0 10px;
+}
+
+.containerForm {
+  
+    font-size: 10px;
+
+
+    width: 350px;
+
+}
+
+
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+
+}
+
+form textarea {
+
+    font-size: 11px;
+}
+
+
+
+}

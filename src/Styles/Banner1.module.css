@@ -7,12 +7,65 @@
 }
 
 .container_banner {
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
-  margin: auto;
-  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+  padding-top: 50px;
 }
+
+.blue {
+  background-color: var(--color-azul);
+  background-image: url("../../public/personImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 33px;
+  width: 1400px;
+  height: 70vh;
+  position: sticky;
+  top: 50px;
+  z-index: 1;
+}
+
+.container_text2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-verde);
+  border-radius: 33px;
+  width: 1400px;
+  height: 70vh;
+  padding: 30px 100px;
+  justify-content: space-around;
+  color: var(--color-text);
+  position: sticky;
+  top: 100px;
+  z-index: 2;
+}
+
+.text {
+  font-size: 19px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+}
+
+.line {
+  height: 3px;
+  background-color: #ffd700;
+  width: 80%;
+  margin: auto;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 41px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 
 .container_all_text {
   display: flex;
@@ -24,9 +77,9 @@
 
 .container_text {
   display: flex;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
-  color: var(--color-verde);
+  color: var(--color-text);
 }
 
 .text2 {
@@ -40,8 +93,145 @@
 }
 
 .bottom_text {
-  color: var(--color-verde);
+  color: var(--color-text);
   font-size: 25px;
   text-align: center;
   font-weight: 400;
+}
+
+
+
+.background {
+  background-image: url("../../public/img/fondoAdvice.png");
+  border-radius: 33px;
+  width: 1400px;
+  height: 70vh;
+  background-color: var(--color-text);
+  position: sticky;
+  top: 150px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); 
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.text8 {
+  display: flex;
+  font-size: 23px;
+  color: var(--color-text);
+  max-width: 1000px;
+  padding: 30px 40px;
+}
+
+span {
+  color: var(--color-amarillo);
+  font-weight: 700;
+}
+
+.p {
+  font-size: 50px;
+  color: var(--color-amarillo);
+  font-weight: 700;
+  max-width: 750px;
+  align-self: flex-end;
+  text-align: end;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+}
+
+/* ======================================================= */
+/* ESTILOS PARA TABLETS (De 837px hasta 1600px de ancho)   */
+/* ======================================================= */
+@media (min-width: 837px) and (max-width: 1600px) {
+ 
+
+.text{
+  font-size: 20px;
+  line-height: 35px;
+}
+}
+
+
+
+
+@media (max-width: 836px) {
+  .blue {
+    border-radius: 23px;
+    max-width: 350px;
+    top: 10px;
+    height: 500px;
+  }
+
+  .textBlue1 {
+    font-size: 22px;
+  }
+
+  .text2 {
+    font-size: 22px;
+  }
+
+  .text3 {
+    font-size: 22px;
+  }
+
+  .container_text2 {
+    border-radius: 23px;
+    max-width: 350px;
+    padding: 20px 30px;
+       height: 500px;
+  }
+
+  .background {
+    border-radius: 23px;
+    width: 200px;
+  
+  }
+
+  .bottom_text {
+    font-size: 13px;
+  }
+
+  .h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.background {
+  border-radius: 23px;
+  width: 350px;
+  height: 500px;
+
+}
+
+.text8 {
+  font-size: 15px;
+  padding: 50px 10px;
+  text-align: center;
+}
+.p {
+  font-size: 30px;
+  max-width: 750px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 }

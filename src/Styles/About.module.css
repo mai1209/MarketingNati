@@ -8,23 +8,34 @@
 
 .container {
   height: 100vh;
-  background-color: var(--color-verde);
   color: var(--color-blanco);
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
 }
 
 .h2 {
-  text-align: center;
+  font-weight: 700;
   font-size: 50px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
-.container_text {
-  align-items: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 40px;
+.container_text2 {
+ display: flex;
+ flex-direction: column;
+  background-color: var(--color-verde);
+  border-radius: 33px;
+  width: 1400px;
+  height: 70vh;
+  padding-top: 30px;
+  padding-left: 20px;
+  justify-content: space-around;
+
+
+
 
 
 }
@@ -32,12 +43,14 @@
 .text {
   font-size: 30px;
   font-weight: 400;
+  text-align: center;
 }
 
 .line {
   height: 3px;
   background-color: #ffd700;
-  width: 80%;
-  margin-top: 80px;
+width: 80%;
+margin: auto;
+
 }
 
