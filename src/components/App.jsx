@@ -39,6 +39,7 @@ useEffect(() => {
 
   return (
     <div  className={style.card}>
+      <img className={style.fondoAzul} src="./rectangulosAzul.png" alt="fondo" />
       <nav className={style.nav}>
         <div className={style.containerNav}>
           <a href="#sobreMi">Sobre mi</a>

@@ -25,8 +25,8 @@ function Footer() {
                 <div className={style.containerRedes} > <img className={style.imgRedes} src="./Facebook.png" alt="instagram" />  <a href="https://www.linkedin.com/in/natalialofeudo/">Facebook</a></div>
               </div>
               <div className={style.dos}>
-                <div className={style.containerRedes}> 
-                   <img className={style.imgRedes} src="./WhatsApp.png" alt="instagram" />  
+                <div className={style.containerRedes}>
+                  <img className={style.imgRedes} src="./WhatsApp.png" alt="instagram" />
                   <a href="https://wa.me/5492213096523">WhatsApp</a>
                 </div>
                 <div className={style.containerRedes}> <img className={style.imgRedes} src="./LinkedIn.png" alt="instagram" />  <a href="https://www.linkedin.com/in/natalialofeudo/">LinkedIn</a></div>

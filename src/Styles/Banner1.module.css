@@ -175,12 +175,7 @@ span {
 
 
 @media (max-width: 836px) {
-  .blue {
-    border-radius: 23px;
-    max-width: 400px;
-    top: 10px;
-    height: 500px;
-  }
+
 
   .textBlue1 {
     font-size: 22px;
@@ -196,17 +191,23 @@ span {
 
   .container_text2 {
     border-radius: 23px;
-    max-width: 400px;
+    max-width: 380px;
     padding: 20px 30px;
        height: 500px;
   }
 
 .background {
   border-radius: 23px;
-  width: 400px;
+  width: 380px;
   height: 500px;
 
 }
+  .blue {
+    border-radius: 23px;
+    max-width: 380px;
+    top: 10px;
+    height: 500px;
+  }
 
   .bottom_text {
     font-size: 13px;
