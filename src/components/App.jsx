@@ -1,12 +1,42 @@
 import style from "../Styles/App.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+//import { IoIosArrowDropup } from "react-icons/io";
+import { HugeiconsIcon } from '@hugeicons/react'
+import { ArrowUpDoubleIcon } from '@hugeicons/core-free-icons'
+
 
 function App() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false });
-  }, []);
+  const [showButton, setShowButton] = useState(false)
+
+
+useEffect(() => {
+  AOS.init({ duration: 1000, once: false });
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowButton(true);
+      console.log("BOTÓN DEBERÍA MOSTRARSE (estado: true)"); // <-- AÑADE ESTA LÍNEA
+    } else {
+      setShowButton(false);
+      console.log("BOTÓN DEBERÍA OCULTARSE (estado: false)"); // <-- AÑADE ESTA LÍNEA
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+  // 6. Función para hacer scroll hacia el top de la página
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  };
+
+
   return (
     <div  className={style.card}>
       <nav className={style.nav}>
@@ -53,6 +83,12 @@ function App() {
         </div>
 
       </div>
+       {showButton && (
+        <button onClick={scrollToTop} className={style.arrow}>
+       <HugeiconsIcon icon={ArrowUpDoubleIcon} size={50}  />
+        </button>
+      )}
+    
     </div>
   );
 }

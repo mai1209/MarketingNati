@@ -21,12 +21,15 @@ function Footer() {
             <p className={style.socialText}>Contactame por redes sociales</p>
             <div className={style.redes}>
               <div className={style.uno}>
-                <div className={style.containerRedes}> <img className={style.imgRedes} src="./Instagram.png" alt="instagram" />  <p>Instagram</p></div>
-                <div className={style.containerRedes} > <img className={style.imgRedes} src="./Facebook.png" alt="instagram" />  <p>Facebook</p></div>
+                <div className={style.containerRedes}> <img className={style.imgRedes} src="./Instagram.png" alt="instagram" /> <a href="https://www.instagram.com/creamarketingparavos">Instagram</a></div>
+                <div className={style.containerRedes} > <img className={style.imgRedes} src="./Facebook.png" alt="instagram" />  <a href="">Facebook</a></div>
               </div>
               <div className={style.dos}>
-                <div className={style.containerRedes}>  <img className={style.imgRedes} src="./WhatsApp.png" alt="instagram" />  <p>WhatsApp</p></div>
-                <div className={style.containerRedes}> <img className={style.imgRedes} src="./LinkedIn.png" alt="instagram" />  <p>LinkedIn</p></div>
+                <div className={style.containerRedes}> 
+                   <img className={style.imgRedes} src="./WhatsApp.png" alt="instagram" />  
+                  <a href="https://wa.me/5492213096523">WhatsApp</a>
+                </div>
+                <div className={style.containerRedes}> <img className={style.imgRedes} src="./LinkedIn.png" alt="instagram" />  <a href="https://www.linkedin.com/in/natalialofeudo/">LinkedIn</a></div>
               </div>
             </div>
           </div>

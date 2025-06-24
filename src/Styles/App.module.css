@@ -1,3 +1,4 @@
+
 :root {
   --color-amarillo: #ffd700;
   --color-verde: #004d40;
@@ -41,6 +42,7 @@
 
 .nav a{
   color: var(--color-amarillo);
+  text-decoration: none;
 }
 
 .imgLogo {
@@ -122,6 +124,18 @@
 display: none;
 
 }
+
+.arrow{
+  background: none;
+  border: none;
+  position: fixed;
+  top: calc(100vh - 60px);
+  right: 15px;
+  z-index: 33;
+  color: var(--color-amarillo);
+}
+
+
 /* ======================================================= */
 /* ESTILOS PARA TABLETS (De 837px hasta 1600px de ancho)   */
 /* ======================================================= */
@@ -166,13 +180,13 @@ display: none;
   }
 .container {
     justify-content: space-around;
-    padding: 40px 0 0 0;
+    padding: 20px 0 0 0;
     border-radius: 13px;
     height: 75vh;
-      background-image: url("../../public/rectanguloAzul.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-background-position:center;
+    background-image: url("../../public/rectanguloAzul.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
   }
  .img {
@@ -247,4 +261,6 @@ background-position:center;
 .btnMore a{
  color: var(--color-amarillo);
 }
+
+
 }
