@@ -177,7 +177,7 @@ span {
 @media (max-width: 836px) {
   .blue {
     border-radius: 23px;
-    max-width: 350px;
+    max-width: 400px;
     top: 10px;
     height: 500px;
   }
@@ -196,16 +196,17 @@ span {
 
   .container_text2 {
     border-radius: 23px;
-    max-width: 350px;
+    max-width: 400px;
     padding: 20px 30px;
        height: 500px;
   }
 
-  .background {
-    border-radius: 23px;
-    width: 200px;
-  
-  }
+.background {
+  border-radius: 23px;
+  width: 400px;
+  height: 500px;
+
+}
 
   .bottom_text {
     font-size: 13px;
@@ -222,12 +223,7 @@ span {
   line-height: 20px;
 }
 
-.background {
-  border-radius: 23px;
-  width: 350px;
-  height: 500px;
 
-}
 
 .text8 {
   font-size: 15px;
