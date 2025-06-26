@@ -1,29 +1,38 @@
-
 :root {
-  --color-amarillo: #FCA311;
+    --color-amarillo: #ffd700;
   --color-verde: #1A535C;
   --color-text: #fff;
   --color-azul: #112970;
-  --color-blanco: #d1d0cf;  --color-black: #211E1E;
+  --color-blanco: #d1d0cf;  
+  --color-black: #211E1E;
 }
+
+/* ===== ESTILO DEL CONTENEDOR PRINCIPAL CORREGIDO ===== */
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    min-height: fit-content;
-    height: 100vh;
+    min-height: 100vh; /* <-- Cambio CLAVE: min-height en lugar de height */
     background-image: url("../../public/fondo\ footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-   
-
-
+    margin-top: 300px;
 }
+
+/* ===== NUEVO ESTILO PARA EL CONTENIDO PRINCIPAL ===== */
+.mainContent {
+    flex-grow: 1; /* <-- La magia: hace que este div ocupe todo el espacio sobrante */
+    display: flex;
+    flex-direction: column;
+    justify-content: end; /* El contenido se alinea al final de este contenedor */
+    position: relative; /* Necesario para la imagen de Nati */
+}
+
+
 .p {
     color: var(--color-text);
     font-size: 50px;
-    font-weight: 600px;
+    font-weight: 600; /* (Corregido de 600px a 600) */
     max-width: 750px;
     margin: 200px 100px 100px 200px;
 }
@@ -70,25 +79,18 @@ form textarea:focus-visible {
     box-shadow: 0 0 0 1px var(--color-amarillo);
 }
 .imageNati {
-
     width: 585px;
     height: 800px;
     position: absolute;
     right: 100px;
     bottom: 5px;
-         mask-image: linear-gradient(
-            #ffd700 95%,
-            transparent
-        );
-
-    
+    mask-image: linear-gradient(to top, transparent, black 5%); /* Máscara mejorada */
 }
 .containerAll {
     display: flex;
     flex-direction: column;
     width: fit-content;
     gap: 20px;
-
 }
 .containerForm {
     margin: 0 200px;
@@ -97,7 +99,6 @@ form textarea:focus-visible {
     color: var(--color-amarillo);
     font-size: 15px;
     font-weight: 500;
-   
 }
 .containerForm a {
     color: var(--color-amarillo);
@@ -147,26 +148,18 @@ form textarea:focus-visible {
     margin-left: auto;
     cursor: pointer;
 }
+.imageNatiMobil{
+    display: none;
+}
 
-  .imageNatiMobil{
-      display: none;
-    }
-
-    /*
-  Añade esto en tu archivo Footer.module.css si quieres
-  personalizar aún más los elementos internos de la alerta.
-*/
 .mySwalButton {
-  /* Le ponemos el texto del botón en un color oscuro para que resalte sobre el amarillo */
   color: #004d40 !important; 
   font-weight: bold !important;
 }
 
 .mySwalTitle {
-  font-size: 1.5em !important; /* Hacemos el título un poco más grande */
+  font-size: 1.5em !important;
 }
-
-/* Pega esto en tu archivo Footer.module.css */
 
 .spinner {
   display: inline-block;
@@ -174,9 +167,9 @@ form textarea:focus-visible {
   height: 18px;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  border-top-color: #fff; /* El color de la parte que gira */
+  border-top-color: #fff;
   animation: spin 1s ease-in-out infinite;
-  margin-right: 10px; /* Espacio entre el spinner y el texto */
+  margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -195,6 +188,7 @@ form textarea:focus-visible {
     padding: 10px 12px;
     color: var(--color-text);
     font-size: 10px;
+    flex-shrink: 0; /* Asegura que el footer no se encoja */
 }
 
 .codex{
@@ -202,12 +196,12 @@ form textarea:focus-visible {
     height: 14px;
     margin: 0 4px;
 }
-
 .codexLogo{
     display: flex;
     align-items: center ;
-    
 }
+
+/* ... TUS MEDIA QUERIES VAN AQUÍ (no necesitan cambios) ... */
 
 @media (min-width: 837px) and (max-width: 1600px) {
     .p {
@@ -223,10 +217,9 @@ form textarea:focus-visible {
 }
 
 @media (max-width: 836px) {
-    .container {
-        margin-top: 250px;
-     
-    }
+    /* (Corregí un margen que no era necesario en el container) */
+    /* .container { margin-top: 250px; } */
+
     .p {
         max-width: 310px;
         font-size: 20px;
@@ -249,12 +242,12 @@ form textarea:focus-visible {
         gap: 20px;
         padding: 10px;
         width: 350px;
+        margin: 0 auto; /* Centramos el formulario */
     }
     .containerForm {
         font-size: 10px;
         width: 300px;
-       margin-right: 250px;
-       
+        margin: 0 auto; /* Centramos el contenedor de redes */
     }
     .redes {
         display: flex;
@@ -266,30 +259,18 @@ form textarea:focus-visible {
     }
 
     .imageNatiMobil{
-        display: none;
-        position: relative;
-        margin: 0 auto ;
-        top: -60px;
-        width: 390px;
-        height: 500px;
-
-        mask-image: linear-gradient(
-           #004d40 80%,
-            transparent
-        );
-
+        display: none; /* (Mantenemos la lógica original) */
     }
 
     .codex{
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-}
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+    }
 
     .footerCodex{
-    
-    flex-direction: column;
-    padding: 3px 12px;
-    font-size: 7px;
-}
+        flex-direction: column;
+        padding: 3px 12px;
+        font-size: 7px;
+    }
 }
