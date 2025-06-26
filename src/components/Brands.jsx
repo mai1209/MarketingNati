@@ -95,8 +95,8 @@ function Brands() {
             {/* Grupo Duplicado */}
             <img src={`${process.env.PUBLIC_URL}/img/img6.png`} alt="img" />
             <img src={`${process.env.PUBLIC_URL}/img/img7.png`} alt="img" />
-            <img src={`${process.env.PUBLIC_URL}/img8.png`} alt="img" />
-            <img src={`${process.env.PUBLIC_URL}/img9.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/img/img8.png`} alt="img" />
+            <img src={`${process.env.PUBLIC_URL}/img/img9.png`} alt="img" />
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@ function Brands() {
             <div className={style.flexTestimonios}>
               <img src="" alt="brand" />
               <p>Abocadito</p>
-            </div>          <div className={style.textTestimonios}>
+            </div>  <div className={style.textTestimonios}>
 
               <p>Abocadito puntuó con 5 Estrellas</p>
               <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>

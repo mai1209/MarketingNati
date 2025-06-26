@@ -1,11 +1,20 @@
 import style from "../Styles/Footer.module.css";
 // 1. Importa la librería que acabas de instalar
 import Swal from 'sweetalert2';
+import { useState } from "react";
 
 function Footer() {
+
+ // 2. Crea la variable de estado para la carga, justo al inicio del componente
+  const [isLoading, setIsLoading] = useState(false);
+
   // La función está perfecta como la tienes
   async function handleSubmit(event) {
     event.preventDefault();
+
+     // ACTIVAMOS el estado de carga
+  setIsLoading(true);
+
     const form = event.target;
     const formData = new FormData(form);
     
@@ -18,17 +27,39 @@ function Footer() {
         }
       });
 
-      if (response.ok) {
-        form.reset();
-        
-        Swal.fire({
-          title: '¡Enviado!',
-          text: 'Tu mensaje fue enviado con éxito. Te responderemos a la brevedad.',
-          icon: 'success',
-          confirmButtonText: 'Genial',
-        });
+    if (response.ok) {
+  form.reset();
+  
+  Swal.fire({
+    // --- TAMAÑO Y POSICIÓN ---
+    position: 'center', // Ya viene por defecto en el medio
+    width: '400px',     // La hacemos más angosta (puedes jugar con este valor)
 
-      } else {
+    // --- COLORES ---
+    background: '#004d40', // El fondo verde oscuro de tu página
+    color: '#ffffff',         // El color del texto en blanco
+
+    // --- CONTENIDO ---
+    title: '¡Enviado!',
+    text: 'Tu mensaje fue enviado con éxito. Te responderé a la brevedad.',
+    icon: 'success',
+    iconColor: '#ffd700', // El ícono de check en tu amarillo
+
+    // --- BOTÓN ---
+    confirmButtonText: 'Genial',
+    confirmButtonColor: '#ffd700', // El botón en tu amarillo
+
+    // --- PARA ESTILOS AVANZADOS (ver paso 2) ---
+    customClass: {
+      confirmButton: style.mySwalButton, // Clase CSS para el botón (opcional)
+      title: style.mySwalTitle,         // Clase CSS para el título (opcional)
+    },
+    
+    // --- FONDO BORROSO (ver paso 2) ---
+    showConfirmButton: true, // Muestra el botón para cerrar
+    backdrop: true,          // Muestra el fondo oscuro semitransparente
+  });
+}else {
         Swal.fire({
           title: 'Error',
           text: 'Hubo un problema al enviar tu mensaje. Por favor, intenta de nuevo.',
@@ -44,7 +75,10 @@ function Footer() {
         icon: 'error',
         confirmButtonText: 'Entendido'
       });
-    }
+    } finally {
+    // DESACTIVAMOS el estado de carga, sin importar si hubo éxito o error
+    setIsLoading(false);
+  }
   }
 
   return (
@@ -64,12 +98,19 @@ function Footer() {
           <input type="email" name="email" placeholder="Correo electrónico – (campo obligatorio)" required/>
           <input type="text" name="instagram" placeholder="Instagram o sitio web – (opcional, para conocer su marca)" />
           <textarea rows="6" cols="10" name="mensaje" placeholder="¿En qué puedo ayudarte? - Escriba su mensaje aquí" required/>
-          <button type="submit" className={style.btnFooter}>Enviar mensaje</button>
+       <button 
+  type="submit" 
+  className={style.btnFooter} 
+  disabled={isLoading} // El botón se deshabilita mientras se carga
+>
+  {/* Usamos un operador ternario para cambiar el contenido del botón */}
+  {isLoading ? 'Enviando...' : 'Enviar mensaje'}
+</button>
         </form >
         
         <div className={style.containerForm}>
           <div className={style.mail}>
-            <img className={style.imgCorreo} src={`${process.env.PUBLIC_URL}/mail.png`} alt="whatsapp" />
+            <img className={style.imgCorreo} src={`${process.env.PUBLIC_URL}/Mail.png`} alt="mail" />
             <p>Agenda una reunion</p>
           </div>
           <div className={style.social}>
@@ -91,7 +132,7 @@ function Footer() {
                   <a href="https://wa.me/5492213096523">WhatsApp</a>
                 </div>
                 <div className={style.containerRedes}> 
-                  <img className={style.imgRedes} src={`${process.env.PUBLIC_URL}/Linkedin.png`} alt="linkeding" />
+                  <img className={style.imgRedes} src={`${process.env.PUBLIC_URL}/LinkedIn.png`} alt="linkeding" />
                   <a href="https://www.linkedin.com/in/natalialofeudo/">LinkedIn</a>
                 </div>
               </div>

@@ -139,6 +139,40 @@ form textarea:focus-visible {
   .imageNatiMobil{
       display: none;
     }
+
+    /*
+  Añade esto en tu archivo Footer.module.css si quieres
+  personalizar aún más los elementos internos de la alerta.
+*/
+.mySwalButton {
+  /* Le ponemos el texto del botón en un color oscuro para que resalte sobre el amarillo */
+  color: #004d40 !important; 
+  font-weight: bold !important;
+}
+
+.mySwalTitle {
+  font-size: 1.5em !important; /* Hacemos el título un poco más grande */
+}
+
+/* Pega esto en tu archivo Footer.module.css */
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff; /* El color de la parte que gira */
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px; /* Espacio entre el spinner y el texto */
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 837px) and (max-width: 1600px) {
     .p {
         font-size: 35px;
@@ -198,6 +232,7 @@ form textarea:focus-visible {
     .imageNatiMobil{
         display: flex;
         position: relative;
+        margin: 0 auto ;
         top: -60px;
         width: 390px;
         height: 500px;

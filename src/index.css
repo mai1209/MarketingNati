@@ -20,3 +20,12 @@ code {
     monospace;
 }
 
+/*
+  Añade esto en tu archivo CSS principal (ej: index.css)
+  para aplicar el fondo borroso a la alerta.
+*/
+.swal2-backdrop {
+  /* El efecto de desenfoque */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* Para compatibilidad con Safari */
+}

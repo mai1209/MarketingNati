@@ -7,8 +7,10 @@ import { useEffect } from "react";
 function Banner1() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true,     
+
+      duration: 1500,
+      offset: 200,    
+      once: true,   
     });
   }, []);
 
