@@ -49,7 +49,7 @@ useEffect(() => {
     <img className={style.fondoAzul} src={`${process.env.PUBLIC_URL}/rectangulosAzul.png`} alt="fondo" />
    <nav className={style.nav}>
         <button onClick={toggleMenu} className={style.hamburgerButton}>
-          <IoMdMenu size={35} />
+          <IoMdMenu />
         </button>
         <div className={`${style.containerNav} ${isMenuOpen ? style.menuOpen : ''}`}>
           <IoMdClose onClick={toggleMenu} className={style.close} />
