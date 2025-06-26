@@ -1,16 +1,16 @@
+
 :root {
-    --color-amarillo: #ffd700;
-    --color-verde: #004d40;
-    --color-text: #fff;
-    --color-azul: #1e3a8a;
-    --color-blanco: #d1d0cf;
-    --color-black: #000000;
+  --color-amarillo: #FCA311;
+  --color-verde: #1A535C;
+  --color-text: #fff;
+  --color-azul: #112970;
+  --color-blanco: #d1d0cf;  --color-black: #211E1E;
 }
 .container {
     display: flex;
     flex-direction: column;
     min-height: fit-content;
-
+    
     background-image: url("../../public/fondo\ footer.png");
     background-repeat: no-repeat;
     background-size: cover;

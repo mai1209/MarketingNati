@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --color-amarillo: #ffd700;
-  --color-verde: #004d40;
+   --color-amarillo: #ffd700;
+  --color-verde:#1A535C;
   --color-text: #fff;
   --color-azul: #1e3a8a;
   --color-blanco: #d1d0cf;
+  --color-azul-zafiro:#0B3954;
 }
 
 .container_banner {
@@ -19,7 +20,7 @@
 }
 
 .blue {
-  background-color: var(--color-azul);
+  background-color: var(--color-azul-zafiro);
   background-image: url("../../public/personImg.png");
   background-repeat: no-repeat;
   background-position: center;

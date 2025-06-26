@@ -1,10 +1,10 @@
+
 :root {
   --color-amarillo: #ffd700;
-  --color-verde: #004d40;
+  --color-verde:#1A535C;
   --color-text: #fff;
   --color-azul: #1e3a8a;
-  --color-blanco: #d1d0cf;
-  --color-black: #1C1C1C;
+  --color-blanco: #d1d0cf;    --color-black: #211E1E;
 }
 
 .container {
@@ -87,10 +87,35 @@ img {
   color: var(--color-text);
   border-radius:  26px;
   width: 600px;
-  height: fit-content;
+  min-height: 110px;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   padding: 12px 10px;
+
+  
+}
+
+/* 1. Define el ancho del scrollbar */
+::-webkit-scrollbar {
+  width: 7px;  /* Ancho para scroll vertical */
+  height: 7px; /* Altura para scroll horizontal */
+}
+
+/* 2. El fondo de la barra de scroll (la "pista" o "track") */
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Un negro suave, no puro #000 */
+}
+
+/* 3. El manejador del scroll (la parte que se arrastra o "thumb") */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Un gris oscuro para que contraste con el fondo */
+  border-radius: 10px; /* Bordes redondeados para un look moderno */
+}
+
+/* 4. Efecto al pasar el mouse sobre el manejador */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Se aclara un poco para dar feedback visual */
 }
 
 .flexTestimonios{
@@ -171,7 +196,7 @@ img {
 }
 .testimonios {
   margin: 10px 0;
-  width: 500px;
+height: fit-content;
   font-size: 12px;
  
 }
@@ -245,7 +270,7 @@ text-align: center;
   border-radius: 26px;
   margin: 20px 0;
   max-width: 370px;
-  height: fit-content;
+  height: 110px;
   flex-shrink: 0;
   gap: 5px;
  

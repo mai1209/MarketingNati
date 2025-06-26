@@ -1,5 +1,7 @@
 import style from "../Styles/Brands.module.css";
 import { useEffect, useRef } from "react";
+import { FaUserCheck } from "react-icons/fa";
+
 function Brands() {
 
   // 1. Creamos una referencia para apuntar a nuestro contenedor con scroll.
@@ -109,65 +111,64 @@ function Brands() {
         <div ref={scrollContainerRef} className={style.containerTestimoniosAll}>
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+             <FaUserCheck />
               <p>Abocadito</p>
             </div>
             <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
               <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
             </div>
           </div>
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+           <FaUserCheck />
               <p>Abocadito</p>
             </div>          <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
-              <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
+             
+              <p>“Nati quiero agradecerte el apoyo emocional y profesional de ayer. No lo popdriamos haber hecho sin vos. Sos una grosa!!”</p>
             </div>
           </div>
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+              <FaUserCheck />
               <p>Abocadito</p>
             </div>          <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
+        
               <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
             </div>
           </div>
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+          <FaUserCheck />
               <p>Abocadito</p>
             </div>          <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
-              <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
+            
+              <p>“Hoy complo una meta muy especial, tu has tenido muchísimo que ver en esto. Te agradezco infinitamente lo gran profesional que eres, buena trabajadora y sobre todo, buena amiga.”</p>
             </div>
           </div>
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+             <FaUserCheck />
               <p>Abocadito</p>
             </div>  <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
-              <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
+ 
+              <p>“Hola bella, estas en el minuto a minuto. Orgullo de verte trabajar por lo que queres.”</p>
             </div>
           </div>
 
           <div className={style.testimonios}>
             <div className={style.flexTestimonios}>
-              <img src="" alt="brand" />
+             <FaUserCheck />
               <p>Abocadito</p>
             </div>
             <div className={style.textTestimonios}>
 
-              <p>Abocadito puntuó con 5 Estrellas</p>
-              <p>“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”</p>
+              <p>“"El trabajo con Nati siempre es confianza y evolución. Resuelve problemas en vez de generarlos. Su forma de expresarse, de comunicarse hizo que mi trabajo sea más visible al mundo y genero un crecimiento muy importante para mi profesionalismo. 
+        Siempre dispuesta a ayudar, sin importar día ni horario. Resolutiva y eficaz. Gracias x este acompañamiento"”</p>
             </div>
 
 
