@@ -173,6 +173,30 @@ form textarea:focus-visible {
     transform: rotate(360deg);
   }
 }
+
+.footerCodex{
+    background-color: #000000;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    color: var(--color-text);
+    font-size: 10px;
+}
+
+.codex{
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+}
+
+.codexLogo{
+    display: flex;
+    align-items: center ;
+    
+}
+
 @media (min-width: 837px) and (max-width: 1600px) {
     .p {
         font-size: 35px;
@@ -238,4 +262,17 @@ form textarea:focus-visible {
         height: 500px;
 
     }
+
+    .codex{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+    .footerCodex{
+    
+    flex-direction: column;
+    padding: 3px 12px;
+    font-size: 7px;
+}
 }

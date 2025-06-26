@@ -82,7 +82,8 @@ function Footer() {
   }
 
   return (
-    <div className={style.container}>
+  <div>
+      <div className={style.container}>
       
       <div id="btnMore" className={style.p}><p>Si crees que es momento de ordenar y potenciar tu marca, estoy lista para acompañarte.</p></div>
       <img className={style.imageNatiMobil} src={`${process.env.PUBLIC_URL}/imageNati.png`} alt="img-nati" />
@@ -141,7 +142,17 @@ function Footer() {
         </div>
       </div>
       <img className={style.imageNati} src={`${process.env.PUBLIC_URL}/imageNati.png`} alt="img-nati" />
+    
     </div>
+      <div className={style.footerCodex}>
+        <p>Copyright Natalia Lofeudo (Creá Marketing para vos) - 2025. Todos los derechos reservados.</p>
+       <div className={style.codexLogo}>
+         <p>Creado por</p>
+           <img  className={style.codex} src={`${process.env.PUBLIC_URL}/img/logoCodex.png`} alt="logo-codex" />{"< CODEX-Astra />"}
+           
+       </div>
+      </div>
+  </div>
   )
 }
 
