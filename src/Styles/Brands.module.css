@@ -10,11 +10,13 @@
 .container {
   display: flex;
   margin: 100px auto;
+  padding: 30px 0;
   background-color: var(--color-black);
    border-radius: 33px;
   max-width: 1400px;
-  height: 70vh;
+  height: fit-content;
   flex-wrap: wrap;
+ 
 
  
 }
@@ -23,7 +25,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-flex: 1 ;
+  flex: 1 ;
+  padding: 0 30px;
+
  
 }
 
@@ -37,8 +41,8 @@ flex: 1 ;
 }
 
 img {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
 }
 
 .containerBrands {
@@ -55,14 +59,14 @@ img {
 }
 
 .text {
-  font-size: 64px;
+  font-size: 45px;
   color: var(--color-text);
   font-weight: 500;
   margin: 30px 0;
 }
 
 .titleTestimonios {
-  font-size: 64px;
+  font-size: 45px;
   color: var(--color-text);
   font-weight: 500;
   margin: 20px 0;
@@ -70,7 +74,8 @@ img {
 
 .subTitle {
   color: var(--color-text);
-  font-size: 29px;
+  font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .testimonios {
@@ -141,7 +146,7 @@ img {
 
 .containerTestimoniosAll{
   height: 305px;
-  
+  gap: 20px;
   padding: 20px 10px 20px 10px;
   display: flex;
   flex-direction: column;

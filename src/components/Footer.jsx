@@ -123,7 +123,7 @@ function Footer() {
                 </div>
                 <div className={style.containerRedes} > 
                   <img className={style.imgRedes} src={`${process.env.PUBLIC_URL}/Facebook.png`} alt="facebook" />
-                  <a href="https://www.linkedin.com/in/natalialofeudo/">Facebook</a>
+                  <a href="https://www.facebook.com/share/1CNKujuGon/?mibextid=wwXIfr">Facebook</a>
                 </div>
               </div>
               <div className={style.dos}>
