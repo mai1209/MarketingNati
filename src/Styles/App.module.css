@@ -1,4 +1,3 @@
-
 :root {
   --color-amarillo: #ffd700;
   --color-verde: #004d40;
@@ -39,19 +38,22 @@
   background-color: var(--color-azul);
   color: var(--color-amarillo);
   height: 110px;
-  
+
   /* Layout y Posicionamiento CORRECTO para ESCRITORIO */
   display: flex;
-  justify-content: space-between; /* Para separar links del logo */
+  justify-content: space-between;
+  /* Para separar links del logo */
   align-items: center;
   padding: 0 100px;
-  position: relative; /* CRUCIAL: Es el ancla para los elementos 'absolute' */
+  position: relative;
+  /* CRUCIAL: Es el ancla para los elementos 'absolute' */
 }
 
-.nav a{
+.nav a {
   color: var(--color-amarillo);
   text-decoration: none;
 }
+
 /* --- 2. El Logo --- */
 .imgLogo {
   width: 90px;
@@ -60,7 +62,7 @@
   top: 12px;
   right: 100px;
   /* Le damos una capa para que no interfiera */
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .slogan {
@@ -79,14 +81,14 @@
   background-color: var(--color-azul);
   padding: 15px;
   font-size: 20px;
- 
+
   border-radius: 33px;
   border: none;
   cursor: pointer;
 }
 
-.btnMoreInfo a{
- color: var(--color-amarillo);
+.btnMoreInfo a {
+  color: var(--color-amarillo);
 }
 
 .containerInfoNati {
@@ -130,39 +132,49 @@
   font-size: 20px;
 }
 
-.btnMore{
-display: none;
+.btnMore {
+  display: none;
 
 }
 
-.arrow{
+.arrow {
   background: none;
   border: none;
   position: fixed;
   top: calc(100vh - 70px);
   right: 15px;
   z-index: 33;
-  color: var(--color-amarillo);
+  color: var(--color-verde);
+    background: linear-gradient(135deg, rgba(255, 200, 240, 0.2), rgba(200, 220, 255, 0.2));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+ 
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
 }
 
-.fondoAzul{
+.fondoAzul {
   display: none;
-   
-  }
 
-  .close{
-    display: none;
-  }
+}
+
+.close {
+  display: none;
+}
+
 /* --- 4. El Botón de Hamburguesa --- */
 .hamburgerButton {
-  display: none; /* Oculto en escritorio por defecto */
+  display: none;
+  /* Oculto en escritorio por defecto */
   background: none;
   border: none;
   color: var(--color-amarillo);
   cursor: pointer;
   padding: 5px;
   /* LA MAGIA: La capa más alta de todas. Nada puede taparlo. */
-  z-index: 10001; 
+  z-index: 10001;
 }
 
 
@@ -187,7 +199,7 @@ display: none;
 
 
   .containerInfoNati {
-    width: 200px; 
+    width: 200px;
     height: 500px;
   }
 
@@ -195,10 +207,11 @@ display: none;
     font-size: 20px;
   }
 
-  .btnMoreInfo{
+  .btnMoreInfo {
     display: flex;
   }
 }
+
 /* ================================================== */
 /* ESTILOS PARA MÓVILES (De 0px hasta 836px de ancho) */
 /* ================================================== */
@@ -208,15 +221,15 @@ display: none;
     font-size: 20px;
     padding: 35px 20px;
 
-     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 
-   
-    }
 
- /* La 'X' para cerrar */
+  }
+
+  /* La 'X' para cerrar */
   .close {
     display: flex;
     margin-left: auto;
@@ -232,32 +245,33 @@ display: none;
     left: 20px;
     top: 50%;
     z-index: 12;
-    
-  
-    transform: translateY(-50%); 
+
+
+    transform: translateY(-50%);
   }
 
-  .hamburgerButton svg{
+  .hamburgerButton svg {
     width: 55px;
     height: 55px;
   }
 
 
- .containerNav {
+  .containerNav {
 
-  display: none;
+    display: none;
 
-}
-.container {
+  }
+
+  .container {
     justify-content: space-around;
     padding: 20px 0 0 0;
     border-radius: 13px;
     height: 75vh;
- 
+
 
   }
 
-  .fondoAzul{
+  .fondoAzul {
     display: flex;
     position: absolute;
     top: 0;
@@ -265,9 +279,9 @@ display: none;
     height: 100%;
     width: 100%;
     z-index: -3;
-   }
+  }
 
- .img {
+  .img {
     width: 100px;
     height: 100px;
   }
@@ -277,13 +291,16 @@ display: none;
     height: 60px;
     right: 20px;
   }
+
   .name {
     font-size: 15px;
   }
+
   .info {
     font-size: 10px;
     text-align: center;
   }
+
   .slogan {
     font-size: 40px;
     max-width: 200px;
@@ -291,10 +308,12 @@ display: none;
     letter-spacing: -3.5px;
     padding-bottom: 0;
     margin-top: 0;
-}
+  }
+
   .btnMoreInfo {
     display: none;
   }
+
   .containerInfoNati {
     width: 138px;
     height: 400px;
@@ -317,26 +336,27 @@ display: none;
     font-size: 12px;
   }
 
-  .btnMore{
-  margin: 150px auto 0 auto;
-  background-color: var(--color-azul);
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-}
+  .btnMore {
+    margin: 150px auto 0 auto;
+    background-color: var(--color-azul);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
 
-.btnMore a{
- color: var(--color-amarillo);
-}
+  .btnMore a {
+    color: var(--color-amarillo);
+  }
 
 
-   /* El panel del menú que se abre (esto estaba casi bien) */
+  /* El panel del menú que se abre (esto estaba casi bien) */
   .menuOpen {
-    display: flex; /* Lo hacemos visible */
+    display: flex;
+    /* Lo hacemos visible */
     flex-direction: column;
     align-items: flex-start;
     z-index: 9999;
@@ -353,7 +373,7 @@ display: none;
     transition: transform 0.3s ease-in-out;
   }
 
-  .menuOpen a{
+  .menuOpen a {
     border-bottom: 1px solid var(--color-amarillo);
     width: 100%;
   }
@@ -361,6 +381,3 @@ display: none;
 
 
 }
-
-
-

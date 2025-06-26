@@ -6,17 +6,17 @@
     --color-blanco: #d1d0cf;
     --color-black: #000000;
 }
-
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: fit-content;
+
     background-image: url("../../public/fondo\ footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
 
+}
 .p {
     color: var(--color-text);
     font-size: 50px;
@@ -24,7 +24,6 @@
     max-width: 750px;
     margin: 200px 100px 100px 200px;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -36,7 +35,6 @@ form {
     width: 508px;
     margin: 0 200px;
 }
-
 form input {
     background: none;
     border: none;
@@ -45,7 +43,6 @@ form input {
     color: var(--color-text);
     padding-left: 20px;
 }
-
 form textarea {
     background: none;
     border: none;
@@ -53,27 +50,22 @@ form textarea {
     color: var(--color-text);
     padding-left: 20px;
 }
-
 form textarea::placeholder {
     color: var(--color-text);
 }
-
 form input::placeholder {
     color: var(--color-text);
 }
-
 form input:focus-visible {
-  outline: none; 
-  border-color: var(--color-amarillo);
-  box-shadow: 0 0 0 1px var(--color-amarillo); 
+    outline: none;
+    border-color: var(--color-amarillo);
+    box-shadow: 0 0 0 1px var(--color-amarillo);
 }
-
 form textarea:focus-visible {
-  outline: none; 
-  border-color: var(--color-amarillo);
-  box-shadow: 0 0 0 1px var(--color-amarillo); 
+    outline: none;
+    border-color: var(--color-amarillo);
+    box-shadow: 0 0 0 1px var(--color-amarillo);
 }
-
 .imageNati {
     width: 585px;
     height: 800px;
@@ -81,14 +73,12 @@ form textarea:focus-visible {
     right: 100px;
     bottom: 5px;
 }
-
 .containerAll {
     display: flex;
     flex-direction: column;
     width: fit-content;
     gap: 20px;
 }
-
 .containerForm {
     margin: 0 200px;
     display: flex;
@@ -97,12 +87,10 @@ form textarea:focus-visible {
     font-size: 15px;
     font-weight: 500;
 }
-
-.containerForm a{
+.containerForm a {
     color: var(--color-amarillo);
     text-decoration: none;
 }
-
 .mail {
     display: flex;
     justify-content: center;
@@ -111,31 +99,25 @@ form textarea:focus-visible {
     width: 100%;
     flex: 1;
 }
-
 .social {
     flex: 1;
 }
-
 .imgCorreo {
     width: 15px;
     height: 15px;
 }
-
 .redes {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
 }
-
 .socialText {
     text-align: center;
 }
-
 .imgRedes {
     width: 15px;
     height: 15px;
 }
-
 .containerRedes {
     display: flex;
     justify-content: center;
@@ -143,8 +125,7 @@ form textarea:focus-visible {
     padding: 5px;
     gap: 2px;
 }
-
-.btnFooter{
+.btnFooter {
     background-color: var(--color-amarillo);
     color: var(--color-verde);
     padding: 10px 20px;
@@ -155,88 +136,71 @@ form textarea:focus-visible {
     cursor: pointer;
 }
 
+  .imageNatiMobil{
+      display: none;
+    }
 @media (min-width: 837px) and (max-width: 1600px) {
     .p {
         font-size: 35px;
         margin: 145px 50px 50px 100px;
-      
     }
-
-   .imageNati {
-    width: 520px;
-    height: 700px;
-
-    right: 10px;
-    bottom: 5px;
-}
-   
-
- 
-
-
+    .imageNati {
+        width: 520px;
+        height: 700px;
+        right: 10px;
+        bottom: 5px;
+    }
 }
 
-@media (max-width: 836px){
-.container {
-
-    margin-top: 250px;
-    height: 110vh;
-  }
-
-  .p {
-    max-width: 370px;
-    font-size: 21px;
-    margin: 120px auto 50px auto;
-    text-align: center ;
-}
-
-  .imageNati {
+@media (max-width: 836px) {
+    .container {
+        margin-top: 250px;
+        height: 110vh;
+    }
+    .p {
+        max-width: 310px;
+        font-size: 20px;
+        margin: 150px auto 0 auto;
+    }
+    .imageNati {
         display: none;
     }
     .containerAll {
-   
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-    gap: 20px;
-   
-}
-.mail{
-    justify-content: flex-start;
-    margin-left: 10px;
-}
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .mail {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    form {
+        gap: 20px;
+        padding: 10px;
+        width: 350px;
+    }
+    .containerForm {
+        font-size: 10px;
+        width: 300px;
+       margin-right: 250px;
+       
+    }
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    form textarea {
+        font-size: 11px;
+    }
 
-form {
-    gap: 20px;
-    padding: 10px;
-    width: 350px;
-    margin: 0 10px;
-}
+    .imageNatiMobil{
+        display: flex;
+        position: relative;
+        top: -60px;
+        width: 390px;
+        height: 500px;
 
-.containerForm {
-  
-    font-size: 10px;
-
-
-    width: 350px;
-
-}
-
-
-
-.redes {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-
-}
-
-form textarea {
-
-    font-size: 11px;
-}
-
-
-
+    }
 }

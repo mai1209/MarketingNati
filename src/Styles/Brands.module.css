@@ -124,11 +124,11 @@ img {
 }
 
 .imgUno {
-   animation: slide 25s linear infinite;
+   animation: slide 10s linear infinite;
 }
 
 .imgDos {
-    animation: slide 25s linear infinite reverse; 
+    animation: slide 10s linear infinite reverse; 
 }
 @keyframes slide {
   from {
