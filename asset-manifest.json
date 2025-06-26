@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MarketingNati/static/css/main.7f076394.css",
-    "main.js": "/MarketingNati/static/js/main.175ea6e0.js",
+    "main.css": "/MarketingNati/static/css/main.adf1a2a1.css",
+    "main.js": "/MarketingNati/static/js/main.bc47ffa6.js",
     "static/js/453.8801e4e3.chunk.js": "/MarketingNati/static/js/453.8801e4e3.chunk.js",
     "static/media/fondoAdvice.png": "/MarketingNati/static/media/fondoAdvice.dcc4d2e755d4522b7ffa.png",
     "static/media/personImg.png": "/MarketingNati/static/media/personImg.cb14650c78146592340c.png",
-    "static/media/fondo footer.png": "/MarketingNati/static/media/fondo footer.3454f7df60315edcb533.png",
+    "static/media/fondo footer.png": "/MarketingNati/static/media/fondo footer.bb597e3b7c200ec32594.png",
     "index.html": "/MarketingNati/index.html",
-    "main.7f076394.css.map": "/MarketingNati/static/css/main.7f076394.css.map",
-    "main.175ea6e0.js.map": "/MarketingNati/static/js/main.175ea6e0.js.map",
+    "main.adf1a2a1.css.map": "/MarketingNati/static/css/main.adf1a2a1.css.map",
+    "main.bc47ffa6.js.map": "/MarketingNati/static/js/main.bc47ffa6.js.map",
     "453.8801e4e3.chunk.js.map": "/MarketingNati/static/js/453.8801e4e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f076394.css",
-    "static/js/main.175ea6e0.js"
+    "static/css/main.adf1a2a1.css",
+    "static/js/main.bc47ffa6.js"
   ]
 }
