@@ -72,6 +72,12 @@ form textarea:focus-visible {
     position: absolute;
     right: 100px;
     bottom: 5px;
+         mask-image: linear-gradient(
+            #ffd700 95%,
+            transparent
+        );
+
+    
 }
 .containerAll {
     display: flex;
@@ -260,6 +266,11 @@ form textarea:focus-visible {
         top: -60px;
         width: 390px;
         height: 500px;
+
+        mask-image: linear-gradient(
+           #004d40 80%,
+            transparent
+        );
 
     }
 
