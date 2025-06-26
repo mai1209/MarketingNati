@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/MarketingNati/static/css/main.9576ebb6.css",
+    "main.css": "/MarketingNati/static/css/main.980867d4.css",
     "main.js": "/MarketingNati/static/js/main.c395206d.js",
     "static/js/453.8801e4e3.chunk.js": "/MarketingNati/static/js/453.8801e4e3.chunk.js",
     "static/media/fondoAdvice.png": "/MarketingNati/static/media/fondoAdvice.dcc4d2e755d4522b7ffa.png",
     "static/media/personImg.png": "/MarketingNati/static/media/personImg.cb14650c78146592340c.png",
     "static/media/fondo footer.png": "/MarketingNati/static/media/fondo footer.bb597e3b7c200ec32594.png",
     "index.html": "/MarketingNati/index.html",
-    "main.9576ebb6.css.map": "/MarketingNati/static/css/main.9576ebb6.css.map",
+    "main.980867d4.css.map": "/MarketingNati/static/css/main.980867d4.css.map",
     "main.c395206d.js.map": "/MarketingNati/static/js/main.c395206d.js.map",
     "453.8801e4e3.chunk.js.map": "/MarketingNati/static/js/453.8801e4e3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9576ebb6.css",
+    "static/css/main.980867d4.css",
     "static/js/main.c395206d.js"
   ]
 }
