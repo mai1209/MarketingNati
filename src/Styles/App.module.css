@@ -24,7 +24,7 @@
 .container {
   display: flex;
   width: 100%;
-  height: calc(85vh - 100px);
+  height: calc(100vh - 110px);
   justify-content: space-around;
   padding: 50px 50px 0 0;
   flex-wrap: wrap;
@@ -116,6 +116,7 @@
 
 .info {
   font-size: 13px;
+ 
   text-align: center;
 }
 
@@ -123,6 +124,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: calc(100vh -320px);
   justify-content: space-between;
 
 }
@@ -272,6 +274,7 @@
     height: 75vh;
 
 
+
   }
 
   .fondoAzul {
@@ -338,7 +341,7 @@
   .description {
     padding: 5px 5px;
     border-radius: 10px;
-    font-size: 11.5px;
+    font-size: 11px;
   }
 
   .btnMore {

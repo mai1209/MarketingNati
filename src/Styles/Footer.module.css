@@ -9,12 +9,15 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     min-height: fit-content;
     height: 100vh;
     background-image: url("../../public/fondo\ footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+   
+
 
 }
 .p {
@@ -67,6 +70,7 @@ form textarea:focus-visible {
     box-shadow: 0 0 0 1px var(--color-amarillo);
 }
 .imageNati {
+
     width: 585px;
     height: 800px;
     position: absolute;
@@ -84,7 +88,7 @@ form textarea:focus-visible {
     flex-direction: column;
     width: fit-content;
     gap: 20px;
-    background-color: var(--color-verde);
+
 }
 .containerForm {
     margin: 0 200px;
@@ -226,7 +230,7 @@ form textarea:focus-visible {
     .p {
         max-width: 310px;
         font-size: 20px;
-        margin: 150px auto 0 auto;
+        margin: 100px auto 50px auto;
     }
     .imageNati {
         display: none;
@@ -262,7 +266,7 @@ form textarea:focus-visible {
     }
 
     .imageNatiMobil{
-        display: flex;
+        display: none;
         position: relative;
         margin: 0 auto ;
         top: -60px;
