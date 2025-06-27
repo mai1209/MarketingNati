@@ -165,7 +165,7 @@ span {
 /* ======================================================= */
 /* ESTILOS PARA TABLETS (De 837px hasta 1600px de ancho)   */
 /* ======================================================= */
-@media (min-width: 837px) and (max-width: 1600px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
  
 
 .text{
@@ -177,7 +177,7 @@ span {
 
 
 
-@media (max-width: 836px) {
+@media (max-width: 1200px) {
 
 
   .textBlue1 {

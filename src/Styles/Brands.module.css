@@ -181,7 +181,7 @@ img {
 
 }
 
-@media (min-width: 837px) and (max-width: 1600px){
+@media (min-width: 1201px) and (max-width: 1600px){
   .text{
     font-size: 40px;
   }
@@ -223,7 +223,7 @@ height: fit-content;
 /* ================================================== */
 /* ESTILOS PARA MÓVILES (De 0px hasta 836px de ancho) */
 /* ================================================== */
-@media (max-width: 836px) {
+@media (max-width: 1200px) {
 
 .text {
   font-size:23px;

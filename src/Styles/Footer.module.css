@@ -203,7 +203,7 @@ form textarea:focus-visible {
 
 /* ... TUS MEDIA QUERIES VAN AQUÍ (no necesitan cambios) ... */
 
-@media (min-width: 837px) and (max-width: 1600px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
     .p {
         font-size: 35px;
         margin: 145px 50px 50px 100px;
@@ -216,7 +216,7 @@ form textarea:focus-visible {
     }
 }
 
-@media (max-width: 836px) {
+@media (max-width: 1200px) {
     /* (Corregí un margen que no era necesario en el container) */
     /* .container { margin-top: 250px; } */
 
