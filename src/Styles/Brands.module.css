@@ -274,6 +274,7 @@ text-align: center;
   height: 110px;
   flex-shrink: 0;
   gap: 5px;
+  max-width: 350px;
  
 }
 

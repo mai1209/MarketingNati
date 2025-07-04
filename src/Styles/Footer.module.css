@@ -24,7 +24,7 @@
     flex-grow: 1; /* <-- La magia: hace que este div ocupe todo el espacio sobrante */
     display: flex;
     flex-direction: column;
-    justify-content: end; /* El contenido se alinea al final de este contenedor */
+    justify-content: start; /* El contenido se alinea al final de este contenedor */
     position: relative; /* Necesario para la imagen de Nati */
 }
 
