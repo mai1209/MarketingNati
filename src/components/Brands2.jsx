@@ -39,7 +39,7 @@ function Brands2() {
 
 
     return (
-        <div className={style.container}>
+        <div id='testimonios' className={style.container}>
             <h2 className={style.title}>TESTIMONIOS</h2>
             <p className={style.subtitleOne}>Lo que dicen quienes han trabajado conmigo</p>
             <div>

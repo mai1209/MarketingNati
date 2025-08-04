@@ -37,7 +37,7 @@ function Banner1() {
       </div>
 
 
-      <div id="sobreMi" className={style.container_text2} data-aos="fade-up">
+      <div id="conóceme" className={style.container_text2} data-aos="fade-up">
         <h2 className={style.h2} data-aos="fade-down">CONOCE MAS DE MI</h2>
 
         <p className={style.text} data-aos="fade-right">
@@ -70,7 +70,7 @@ function Banner1() {
 
       </div>
 
-        <div id="miEnfoque" className={style.background}>
+        <div id="enfoque" className={style.background}>
          <div className={style.container_advice}>
           <img src="./img/imgAdvice.png" alt="fondoadvice" />
            <p className={style.text8}>
