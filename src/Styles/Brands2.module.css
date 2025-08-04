@@ -45,7 +45,7 @@
 }
 
 .containerImg img {
-    width: fit-content;
+    width: 260px;
     height: 150px;
 }
 
@@ -59,6 +59,7 @@
     margin: 0.5px;
     padding: 2px;
     max-width: 400px;
+
 }
 .containerInfo h3 {
     color: var(--color-verde);

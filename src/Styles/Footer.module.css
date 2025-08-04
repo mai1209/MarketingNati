@@ -82,6 +82,14 @@
   border: none;
   box-shadow: -3px 3px 0 var(--color-verde);
 }
+
+.containerInput textarea{
+  width: 90%;
+  padding-left: 10px;
+  height: 50px;
+  border: none;
+  box-shadow: -3px 3px 0 var(--color-verde);
+}
 .titleContact{
   font-size: 1.9rem;
   color: var(--color-verde);
