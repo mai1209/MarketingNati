@@ -146,7 +146,7 @@ function Footer() {
       <div className={style.containerIcon}>
         <a href="https://www.facebook.com/share/1CNKujuGon/?mibextid=wwXIfr"> <img src="./Facebook.png" alt="facebook" /></a>
         <a  href="https://wa.me/5492213096523" target="_blank" rel="noopener noreferrer"> <img src="./WhatsApp.png" alt="wp" /></a>
-        <a  href="https://www.linkedin.com/in/natalialofeudo/" target="_blank" rel="noopener noreferrer">   <img src="./Linkedin.png" alt="linkedin" /></a>
+        <a  href="https://www.linkedin.com/in/natalialofeudo/" target="_blank" rel="noopener noreferrer">   <img src="./LinkedIn.png" alt="linkedin" /></a>
         <a href="https://www.instagram.com/creamarketingparavos/" target="_blank" rel="noopener noreferrer">  <img src="./Instagram.png" alt="instagram" /></a>
       </div>
       <div className={style.containerFooter}>

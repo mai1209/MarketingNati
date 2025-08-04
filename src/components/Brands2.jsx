@@ -1,8 +1,19 @@
 import React from 'react'
 import style from '../Styles/Brands2.module.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function Brands2() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out-back',
+            once: true,
+            mirror: false,
+            offset: 100
+        });
+    }, []);
 
     const testimonios = [
         {
@@ -37,15 +48,21 @@ function Brands2() {
         { 'img': process.env.PUBLIC_URL + '/img/img9.png', },
     ]
 
-
     return (
         <div id='testimonios' className={style.container}>
-            <h2 className={style.title}>TESTIMONIOS</h2>
-            <p className={style.subtitleOne}>Lo que dicen quienes han trabajado conmigo</p>
-            <div>
+            <h2 className={style.title} data-aos="fade-down">TESTIMONIOS</h2>
+            <p className={style.subtitleOne} data-aos="fade-down" data-aos-delay="100">Lo que dicen quienes han trabajado conmigo</p>
+            
+            <div data-aos="fade-up">
                 <div className={style.containerImg}>
                     {testimonios.map((item, index) => (
-                        <div className={style.containerInfo} key={index}>
+                        <div 
+                            className={style.containerInfo} 
+                            key={index}
+                            data-aos="flip-left" 
+                            data-aos-delay={200 + (index * 150)}
+                            data-aos-duration="800"
+                        >
                             <img src={item.img} alt="img" />
                             <h3>{item.title}</h3>
                             <p className={style.subtitle}>{item.subtitle}</p>
@@ -54,16 +71,26 @@ function Brands2() {
                     ))}
                 </div>
             </div>
-            <div>
+            
+            <div data-aos="fade-up" data-aos-delay="300">
                 <div className={style.containerBrands}>
                     {brands.map((item, index) => (
-                        <div className={style.containerBrandsImg} key={index}>
+                        <div 
+                            className={style.containerBrandsImg} 
+                            key={index}
+                            data-aos="zoom-in" 
+                            data-aos-delay={400 + (index * 50)}
+                            data-aos-duration="600"
+                        >
                             <img src={item.img} alt="img" />
                         </div>
                     ))}
                 </div>
             </div>
-            <p className={style.textBottom}>Si crees que es momento de ordenar y potenciar tu marca, estoy lista para acompañarte.</p>
+            
+            <p className={style.textBottom} data-aos="fade-up" data-aos-delay="500">
+                Si crees que es momento de ordenar y potenciar tu marca, estoy lista para acompañarte.
+            </p>
         </div>
     )
 }

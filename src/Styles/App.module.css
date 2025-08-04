@@ -18,7 +18,7 @@
 
 nav {
   border-bottom: 1.5px solid var(--color-verde);
-  padding: 1rem 2.6rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,6 +135,9 @@ nav {
 }
 
 @media (min-width: 1000px) {
+  .nav{
+      padding: 1rem 2.6rem;
+  }
   .containerHero {
     justify-content: space-between;
     flex-direction: row;
