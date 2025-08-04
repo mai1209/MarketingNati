@@ -115,7 +115,7 @@
   z-index: 3;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 200px;
  
 
 }
@@ -162,6 +162,8 @@ line-height: 2.5rem;
   margin-left: 1rem;
   margin-top: 1rem;
 }
+
+
 
 /* ======================================================= */
 /* ESTILOS PARA TABLETS (De 837px hasta 1600px de ancho)   */
@@ -240,7 +242,7 @@ line-height: 2.5rem;
 
 
   flex-direction: column;
-  margin: 150px auto;
+  margin: 300px auto;
  
 
 }

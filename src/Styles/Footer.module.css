@@ -11,7 +11,7 @@
   --color-fondo-new: #FEF4F4;
 }
 .container{
-  margin-top: 60vh;
+
   width: 100vw;
   height: fit-content;
 }
@@ -139,9 +139,7 @@
 
 
 @media (min-width: 850px){
-.container{
-  margin-top: 30vh;
-}
+
 .wrapper{
   display: flex;
   justify-content: space-around;
