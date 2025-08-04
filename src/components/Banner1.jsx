@@ -15,7 +15,8 @@ function Banner1() {
   }, []);
 
   return (
-    <div className={style.container_banner}>
+      <div>
+            <div className={style.container_banner}>
 
 
       <div className={style.blue}>
@@ -66,15 +67,21 @@ function Banner1() {
 
         <div className={style.line} data-aos="zoom-in"></div>
       </div>
-      <div id="miEnfoque" className={style.background}>
-          <p className={style.text8}>
+
+      </div>
+
+        <div id="miEnfoque" className={style.background}>
+         <div className={style.container_advice}>
+          <img src="./img/imgAdvice.png" alt="fondoadvice" />
+           <p className={style.text8}>
             Acompaño a empresas, emprendedores y freelancers a construir estrategias
-            de marketing y comunicación alineadas con su propósito.Estoy acá para
+            de marketing y comunicación alineadas con su propósito. <br /> Estoy acá para
             ayudarte a ordenar, priorizar y comunicar con claridad, a través de
             procesos estratégicos que respeten la esencia de tu marca.
           </p>
+         </div>
          <p className={style.p}>
-            Todo adaptado a vos, con una mirada cercana y personalizada
+            Todo adaptado <br /> a vos, con una  <br />mirada <br />   cercana y  <br />personalizada
           </p>
         </div>
       </div>

@@ -1,276 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --color-amarillo: #ffd700;
+  --color-amarillo: #B0AD12;
   --color-verde: #1A535C;
   --color-text: #fff;
   --color-azul: #112970;
   --color-blanco: #d1d0cf;  
   --color-black: #211E1E;
+  --color-fondo-new: #FEF4F4;
 }
-
-/* ===== ESTILO DEL CONTENEDOR PRINCIPAL CORREGIDO ===== */
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* <-- Cambio CLAVE: min-height en lugar de height */
-    background-image: url("../../public/fondo\ footer.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    margin-top: 300px;
+.container{
+  margin-top: 135vh;
+  width: 100vw;
+  height: fit-content;
 }
-
-/* ===== NUEVO ESTILO PARA EL CONTENIDO PRINCIPAL ===== */
-.mainContent {
-    flex-grow: 1; /* <-- La magia: hace que este div ocupe todo el espacio sobrante */
-    display: flex;
-    flex-direction: column;
-    justify-content: start; /* El contenido se alinea al final de este contenedor */
-    position: relative; /* Necesario para la imagen de Nati */
+.logoFooter{
+  width: 105px;
+  height: 55px;
+  position: relative;
+  z-index: 1;
+  left: 20px;
+  top: 30px;
 }
-
-
-.p {
-    color: var(--color-text);
-    font-size: 50px;
-    font-weight: 600; /* (Corregido de 600px a 600) */
-    max-width: 750px;
-    margin: 200px 100px 100px 200px;
+.containerInfo{
+  background-color: var(--color-text);
+  box-shadow: -6px 6px 0 var(--color-verde);
+  color: var(--color-black);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem 1rem 0 0 ;
+  margin:0 12px ;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border: 2px solid var(--color-amarillo);
-    border-radius: 26px;
-    height: fit-content;
-    width: 508px;
-    margin: 0 200px;
-}
-form input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--color-amarillo);
-    padding: 5px 0;
-    color: var(--color-text);
-    padding-left: 20px;
-}
-form textarea {
-    background: none;
-    border: none;
-    padding: 5px 0;
-    color: var(--color-text);
-    padding-left: 20px;
-}
-form textarea::placeholder {
-    color: var(--color-text);
-}
-form input::placeholder {
-    color: var(--color-text);
-}
-form input:focus-visible {
-    outline: none;
-    border-color: var(--color-amarillo);
-    box-shadow: 0 0 0 1px var(--color-amarillo);
-}
-form textarea:focus-visible {
-    outline: none;
-    border-color: var(--color-amarillo);
-    box-shadow: 0 0 0 1px var(--color-amarillo);
-}
-.imageNati {
-    width: 585px;
-    height: 800px;
-    position: absolute;
-    right: 100px;
-    bottom: 5px;
-    mask-image: linear-gradient(to top, transparent, black 5%); /* Máscara mejorada */
-}
-.containerAll {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    gap: 20px;
-}
-.containerForm {
-    margin: 0 200px;
-    display: flex;
-    justify-content: space-between;
-    color: var(--color-amarillo);
-    font-size: 15px;
-    font-weight: 500;
-}
-.containerForm a {
-    color: var(--color-amarillo);
-    text-decoration: none;
-}
-.mail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    flex: 1;
-}
-.social {
-    flex: 1;
-}
-.imgCorreo {
-    width: 15px;
-    height: 15px;
-}
-.redes {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-}
-.socialText {
-    text-align: center;
-}
-.imgRedes {
-    width: 15px;
-    height: 15px;
-}
-.containerRedes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    gap: 2px;
-}
-.btnFooter {
-    background-color: var(--color-amarillo);
-    color: var(--color-verde);
-    padding: 10px 20px;
-    border-radius: 26px;
-    border: none;
-    width: fit-content;
-    margin-left: auto;
-    cursor: pointer;
-}
-.imageNatiMobil{
-    display: none;
-}
-
-.mySwalButton {
-  color: #004d40 !important; 
-  font-weight: bold !important;
-}
-
-.mySwalTitle {
-  font-size: 1.5em !important;
-}
-
-.spinner {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
+.circle{
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-fondo-new);
+  border: 1px solid var(--color-black);
   border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s ease-in-out infinite;
-  margin-right: 10px;
-  vertical-align: middle;
+}
+.containerInfo p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: end;
+  font-size: 1.4rem;
+}
+.form{
+  background-image: url('../../public/imgHero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #5E5455;
+  background-blend-mode: luminosity;
+  padding: 1rem 0 0 0.6rem;
+  box-shadow:
+      0 0 0 3px white,
+      -8px 8px 0px var(--color-verde);
+  margin: 0 12px;
+  height: 300px;
+}
+.containerInput{
+  display: flex;
+  flex-direction: column;
+}
+.containerInput label{
+  font-size: 01rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.7rem 0 0 0;
+}
+.containerInput input{
+  width: 90%;
+  padding-left: 10px;
+  height: 20px;
+  border: none;
+  box-shadow: -3px 3px 0 var(--color-verde);
+}
+.titleContact{
+  font-size: 1.9rem;
+  color: var(--color-verde);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  padding: 1rem 0;
+}
+.btn{
+  margin: 1rem 0;
+  border: none;
+  padding: 0.3rem;
+  margin-left: 145px;
+  cursor: pointer;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Archivo", sans-serif;
+}
+.btn:hover{
+  background-color: var(--color-verde);
+  color: var(--color-text);
+}
+.containerIcon{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2rem 0;
+}
+.containerIcon img{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.containerFooter{
+  background-color: var(--color-black);
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6rem;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  padding: 8px 0;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+
+@media (min-width: 850px){
+.container{
+  margin-top: 30vh;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.containerInfo{
+  height: 300px;
+  padding: 1.5rem 1rem 0 1.5rem ;
+  margin-top: 30px;
+}
+.circle{
+  width: 42px;
+  height: 42px;
+}
+.containerInfo p{
+  font-size: 2rem;
+}
+.logoFooter{
+  width: 140px;
+  height: 70px;
+  left: 25px;
+  top: 60px;
+}
+.form{
+  padding: 2rem 0 0 2rem;
+  margin: 0 12px;
+  height: 450px;
+  width: 700px;
+}
+.titleContact{
+  font-size: 2.8rem;
+}
+.containerInput label{
+  font-size: 1.5rem;
+  padding: 1rem 0 0 0;
+}
+.containerInput input{
+  width: 90%;
+  padding-left: 10px;
+  height: 28px;
+  box-shadow: -4px 4px 0 var(--color-verde);
+}
+.btn{
+  margin: 1rem 0;
+  padding: 0.3rem;
+  margin-left: 430px;
+  font-size: 1.5rem;
+}
+.containerIcon{
+  justify-content: start;
+  gap: 10px;
+  margin: 2rem 10rem;
+}
+.containerIcon img{
+  width: 50px;
+  height: 50px;
 }
 
-.footerCodex{
-    background-color: #000000;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 12px;
-    color: var(--color-text);
-    font-size: 10px;
-    flex-shrink: 0; /* Asegura que el footer no se encoja */
+.containerFooter{ 
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 1rem;
 }
 
-.codex{
-    width: 14px;
-    height: 14px;
-    margin: 0 4px;
-}
-.codexLogo{
-    display: flex;
-    align-items: center ;
-}
-
-/* ... TUS MEDIA QUERIES VAN AQUÍ (no necesitan cambios) ... */
-
-@media (min-width: 1201px) and (max-width: 1600px) {
-    .p {
-        font-size: 35px;
-        margin: 145px 50px 50px 100px;
-    }
-    .imageNati {
-        width: 520px;
-        height: 700px;
-        right: 10px;
-        bottom: 5px;
-    }
-}
-
-@media (max-width: 1200px) {
-    /* (Corregí un margen que no era necesario en el container) */
-    /* .container { margin-top: 250px; } */
-
-    .p {
-        max-width: 310px;
-        font-size: 20px;
-        margin: 100px auto 50px auto;
-    }
-    .imageNati {
-        display: none;
-    }
-    .containerAll {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-    }
-    .mail {
-        justify-content: flex-start;
-        margin-left: 10px;
-    }
-    form {
-        gap: 20px;
-        padding: 10px;
-        width: 350px;
-        margin: 0 auto; /* Centramos el formulario */
-    }
-    .containerForm {
-        font-size: 10px;
-        width: 300px;
-        margin: 0 auto; /* Centramos el contenedor de redes */
-    }
-    .redes {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
-    }
-    form textarea {
-        font-size: 11px;
-    }
-
-    .imageNatiMobil{
-        display: none; /* (Mantenemos la lógica original) */
-    }
-
-    .codex{
-        width: 10px;
-        height: 10px;
-        margin: 0 5px;
-    }
-
-    .footerCodex{
-        flex-direction: column;
-        padding: 3px 12px;
-        font-size: 7px;
-    }
 }
