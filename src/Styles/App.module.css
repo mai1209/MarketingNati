@@ -12,6 +12,7 @@
 
 .container {
   height: 100vh;
+  margin-top: 150px ;
   flex-wrap: wrap;
 
 }
@@ -22,6 +23,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  background-color: var(--color-fondo-new);
 }
 
 .logo {
@@ -64,7 +72,7 @@ nav {
   background-blend-mode: luminosity;
   height: 300px;
   margin: 1rem 0.2rem;
-
+  max-width: 1000px;
   position: relative;
 
 }
@@ -137,12 +145,17 @@ nav {
 @media (min-width: 1000px) {
   .nav{
       padding: 1rem 2.6rem;
+      max-width: 1900px;
+      margin: auto;
   }
   .containerHero {
     justify-content: space-between;
     flex-direction: row;
     height: calc(100% - 100px);
     padding: 6rem 3rem;
+    max-width: 1900px;
+    margin: auto;
+    align-items: center;
   }
 
   .logo {
@@ -154,7 +167,7 @@ nav {
     box-shadow:
       0 0 0 3px white,
       -8px 8px 0px var(--color-verde);
-    height: 500px;
+    height: 550px;
     width: 90%;
     padding: 2rem 1.5rem;
   }
@@ -190,7 +203,7 @@ nav {
   .containerDescription {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     text-align: end;
     padding: 0 1rem;
     line-height: 2rem;

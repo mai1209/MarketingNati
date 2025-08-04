@@ -4,36 +4,43 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function Banner1() {
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 150,
+      once: true,
+      easing: 'ease-out-back',
+    });
+  }, []);
 
   return (
     <div>
       <div className={style.container_banner}>
         <div className={style.blue}>
           <div className={style.container_all_text}>
-            <div className={style.container_text} >
+            <div className={style.container_text} data-aos="fade-down-right" data-aos-delay="100">
               <p className={style.textBlue1}>Crea desde tu <br /> autenticidad</p>
             </div>
-            <div className={style.container_text}>
+            <div className={style.container_text} data-aos="fade-down-left" data-aos-delay="300">
               <p className={style.text2}>Comunicá con <br /> intención</p>
             </div>
-            <div className={style.container_text} >
+            <div className={style.container_text} data-aos="zoom-in-up" data-aos-delay="500">
               <p className={style.text3}>Conecta <br /> desde lo humano</p>
             </div>
           </div>
-          <div >
+          <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700">
             <p className={style.bottom_text}>Crece con estrategia, foco y autenticidad</p>
           </div>
         </div>
 
         <div id="conóceme" className={style.container_text2}>
-          <h2 className={style.h2} >CONOCE MAS DE MI</h2>
+          <h2 className={style.h2}>CONOCE MAS DE MI</h2>
 
-          <p className={style.text} >
+          <p className={style.text}>
             Soy Natalia, asesora en marketing, comunicación y estrategia digital.
           </p>
 
-          <p className={style.text} >
+          <p className={style.text}>
             Mi camino comenzó con un emprendimiento propio: un salón de belleza en
             La Plata. Viajar, explorar culturas y vivir la maternidad durante la
             pandemia despertaron en mí una nueva vocación: el mundo digital.
@@ -54,7 +61,7 @@ function Banner1() {
             co-creación con propósito.
           </p>
 
-          <div className={style.line} data-aos="zoom-in" data-aos-delay="700"></div>
+          <div className={style.line} ></div>
         </div>
       </div>
 
