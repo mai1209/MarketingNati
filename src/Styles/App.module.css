@@ -29,7 +29,9 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999999;
-  background-color: var(--color-fondo-new);
+   background-color: #ffffff6c;
+  backdrop-filter: blur(4px);
+  box-shadow: 1px 1px 10px #61616195;
 }
 
 .logo {
@@ -142,6 +144,36 @@ nav {
   font-weight: 200;
 }
 
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-verde);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+  font-size: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.scrollToTop.show {
+  opacity: 1;
+}
+
+.scrollToTop:hover {
+   background-color: var(--color-amarillo); 
+}
+
 @media (min-width: 1000px) {
   .nav{
       padding: 1rem 2.6rem;
@@ -212,6 +244,15 @@ nav {
   .textBottom{
 
   font-size: 2rem;
+
+} 
+
+.scrollToTop {
+
+  bottom: 30px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
 
 }
 }

@@ -1,9 +1,35 @@
 import style from "../Styles/App.module.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Mostrar/ocultar la flecha al hacer scroll
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  // Scroll suave al inicio
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -86,6 +112,14 @@ function App() {
           })}
         </div>
       </div>
+         <div 
+      className={`${style.scrollToTop} ${isVisible ? style.show : ''}`} 
+      onClick={scrollToTop}
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      ↑
+    </div>
     </div>
   );
 }
