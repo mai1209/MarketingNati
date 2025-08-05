@@ -9,7 +9,7 @@ function App() {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  // Mostrar/ocultar la flecha al hacer scroll
+  
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
@@ -73,7 +73,7 @@ function App() {
   return (
     <div className={style.container}>
       <nav data-aos="fade-down" data-aos-delay="100">
-        <img className={style.logo} src="/logo.png" alt="logo" data-aos="zoom-in" data-aos-delay="300" />
+        <img onClick={scrollToTop} className={style.logo} src="/logo.png" alt="logo" data-aos="zoom-in" data-aos-delay="300" />
         <div className={style.containerItem}>
           {menuItems.map((item, index) => {
             const itemId = item.toLowerCase().replace(/\s+/g, '-');

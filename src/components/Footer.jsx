@@ -6,7 +6,7 @@ function Footer() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const form = e.target;  // MOVER ESTA LÍNEA AL INICIO
+    const form = e.target;  
 
     // Validación
     const name = form.name.value.trim();
