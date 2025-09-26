@@ -29,7 +29,7 @@ function Banner1() {
             </div>
           </div>
           <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700">
-            <p className={style.bottom_text}>Crece con estrategia, foco y autenticidad</p>
+            <p className={style.bottom_text}>Te ayudo a ordenar ideas, comunicar con claridad y crecer con estrategia y autenticidad</p>
           </div>
         </div>
 
@@ -41,24 +41,15 @@ function Banner1() {
           </p>
 
           <p className={style.text}>
-            Mi camino comenzó con un emprendimiento propio: un salón de belleza en
-            La Plata. Viajar, explorar culturas y vivir la maternidad durante la
-            pandemia despertaron en mí una nueva vocación: el mundo digital.
+            Mi camino comenzó con un emprendimiento propio en La Plata. <br /> Viajar, conocer culturas y transitar la maternidad en pandemia despertaron mi vocación por el mundo digital.
           </p>
 
           <p className={style.text} >
-            Desde entonces, acompaño a marcas, profesionales y empresas que desean
-            crecer de forma auténtica, estratégica y alineada a su esencia.
+           Hoy acompaño a marcas, profesionales y empresas que desean crecer de forma auténtica, estratégica y alineada a su esencia.
           </p>
 
           <p className={style.text} >
-            Me especializo en crear planes con foco, claridad, compromiso y una
-            visión realista.
-          </p>
-
-          <p className={style.text} >
-            Creo en el poder de la conexión humana, el trabajo colaborativo y la
-            co-creación con propósito.
+        Creo en el poder de la conexión humana, la comunicación con propósito y la co-creación como motor de transformación
           </p>
 
           <div className={style.line} ></div>
