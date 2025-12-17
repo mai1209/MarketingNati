@@ -106,7 +106,7 @@ function Footer() {
           <h3 className={style.titleContact}>Contactame</h3>
           <form
             onSubmit={handleSubmit}
-            action="https://formsubmit.co/mairacoria1209@gmail.com"
+            action="https://formsubmit.co/creamarketingparavos@gmail.com"
             method="POST"
             className={style.form}
           >
