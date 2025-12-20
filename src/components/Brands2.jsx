@@ -29,7 +29,7 @@ function Brands2() {
             'number': '02',
         },
         {
-            'img': process.env.PUBLIC_URL + '/C21busaniche.png',
+            'img': process.env.PUBLIC_URL + '/C21Busaniche.png', 
             'title': 'CENTURY 21 BUSANICHE',
             'subtitle': '“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”',
             'number': '03',
