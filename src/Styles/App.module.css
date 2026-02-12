@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --color-amarillo: #B0AD12;
-  --color-verde: #014E41;
+  --color-amarillo: #b0ad12;
+  --color-verde: #014e41;
   --color-text: #fff;
   --color-azul: #1e3a8a;
   --color-blanco: #d1d0cf;
-  --color-fondo-new: #FEF4F4;
+  --color-fondo-new: #fef4f4;
 }
 
 .container {
   height: 100vh;
-  margin-top: 150px ;
+  margin-top: 150px;
   flex-wrap: wrap;
-
 }
 
 nav {
@@ -29,7 +28,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999999;
-   background-color: #ffffff6c;
+  background-color: #ffffff6c;
   backdrop-filter: blur(4px);
   box-shadow: 1px 1px 10px #61616195;
 }
@@ -53,7 +52,7 @@ nav {
   font-weight: 500;
   font-style: normal;
 }
-
+  
 .containerItem a:hover {
   color: var(--color-amarillo);
 }
@@ -63,20 +62,15 @@ nav {
   flex-direction: column;
 }
 
-
-
 .backgroundImg {
-  background-image: url('../../public/nuevoFondo.jpg');
+  background-image: url("../../public/imgHero.png");
   background-position: inherit;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #5E5455;
-
   height: 300px;
   margin: 1rem 0.2rem;
   max-width: 1000px;
-  position: relative; 
-
+  position: relative;
 }
 
 .textHero {
@@ -86,7 +80,7 @@ nav {
 }
 
 .textHero h2 {
-  color: #B0AD12;
+  color: #b0ad12;
   text-transform: uppercase;
   font-weight: 800;
   font-style: normal;
@@ -113,7 +107,6 @@ nav {
   text-align: end;
   padding: 1rem 1rem;
   line-height: 1.5rem;
-
 }
 
 .containerDescription h3 {
@@ -131,19 +124,18 @@ nav {
   font-size: 0.9rem;
 }
 
-.textBottom{
+.textBottom {
   color: var(--color-text);
   font-size: 0.8rem;
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 1rem ;
+  margin: 1rem;
   text-transform: uppercase;
-    font-style: normal;
+  font-style: normal;
   font-family: "Archivo", sans-serif;
   font-weight: 200;
 }
-
 
 .scrollToTop {
   position: fixed;
@@ -171,14 +163,14 @@ nav {
 }
 
 .scrollToTop:hover {
-   background-color: var(--color-amarillo); 
+  background-color: var(--color-amarillo);
 }
 
 @media (min-width: 1000px) {
-  .nav{
-      padding: 1rem 2.6rem;
-      max-width: 1900px;
-      margin: auto;
+  .nav {
+    padding: 1rem 2.6rem;
+    max-width: 1900px;
+    margin: auto;
   }
   .containerHero {
     justify-content: space-between;
@@ -196,17 +188,8 @@ nav {
   }
 
   .backgroundImg {
-    box-shadow:
-      0 0 0 3px white,
-      -8px 8px 0px var(--color-verde);
     height: 550px;
     width: 90%;
-    padding: 2rem 1.5rem;
-  }
-
-  .containerItem {
-
-
   }
 
   .containerItem a {
@@ -225,7 +208,6 @@ nav {
 
   .containerDescription h3 {
     font-size: 2.5rem;
-
   }
 
   .containerDescription p {
@@ -241,18 +223,14 @@ nav {
     line-height: 2rem;
   }
 
-  .textBottom{
+  .textBottom {
+    font-size: 2rem;
+  }
 
-  font-size: 2rem;
-
-} 
-
-.scrollToTop {
-
-  bottom: 30px;
-  right: 15px;
-  width: 50px;
-  height: 50px;
-
-}
+  .scrollToTop {
+    bottom: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
 }

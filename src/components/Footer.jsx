@@ -157,10 +157,10 @@ function Footer() {
 
       <div className={style.containerFooter}>
         <p>
-          Copyright Natalia Lofeudo (Creá Marketing para vos) - 2025.
+          Copyright Natalia Lofeudo (Creá Marketing para vos) - 2026.
           Todos los derechos reservados.
         </p>
-        <p>Creado por CODEX Corporation & Business R</p>
+        <a href="https://www.letsbuilditcodex.com" target="_blank" rel="noopener noreferrer">Creado por CODEX Corporation & Business R</a>
       </div>
     </div>
   );

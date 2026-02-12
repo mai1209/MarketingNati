@@ -1,21 +1,19 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --color-amarillo: #B0AD12;
-  --color-verde: #1A535C;
+  --color-amarillo: #b0ad12;
+  --color-verde: #1a535c;
   --color-text: #fff;
   --color-azul: #112970;
-  --color-blanco: #d1d0cf;  
-  --color-black: #211E1E;
-  --color-fondo-new: #FEF4F4;
+  --color-blanco: #d1d0cf;
+  --color-black: #211e1e;
+  --color-fondo-new: #fef4f4;
 }
-.container{
-
+.container {
   width: 100vw;
   height: fit-content;
 }
-.logoFooter{
+.logoFooter {
   width: 105px;
   height: 55px;
   position: relative;
@@ -23,7 +21,7 @@
   left: 20px;
   top: 30px;
 }
-.containerInfo{
+.containerInfo {
   background-color: var(--color-text);
   box-shadow: -6px 6px 0 var(--color-verde);
   color: var(--color-black);
@@ -31,42 +29,42 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 1rem 1rem 0 0 ;
-  margin:0 12px ;
+  padding: 1rem 1rem 0 0;
+  margin: 0 12px;
 }
-.circle{
+.circle {
   width: 32px;
   height: 32px;
   background-color: var(--color-fondo-new);
   border: 1px solid var(--color-black);
   border-radius: 50%;
 }
-.containerInfo p{
+.containerInfo p {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-align: end;
   font-size: 1.4rem;
 }
-.form{
-  background-image: url('../../public/imgHero.png');
+.form {
+  background-image: url("../../public/imgHero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #5E5455;
+  background-color: #5e5455;
   background-blend-mode: luminosity;
   padding: 1rem 0 0 0.6rem;
   box-shadow:
-      0 0 0 3px white,
-      -8px 8px 0px var(--color-verde);
+    0 0 0 3px white,
+    -8px 8px 0px var(--color-verde);
   margin: 0 12px;
   height: 300px;
 }
-.containerInput{
+.containerInput {
   display: flex;
   flex-direction: column;
 }
-.containerInput label{
+.containerInput label {
   font-size: 01rem;
   text-transform: uppercase;
   color: var(--color-text);
@@ -75,22 +73,26 @@
   font-style: normal;
   padding: 0.7rem 0 0 0;
 }
-.containerInput input{
+.containerInput input {
   width: 90%;
   padding-left: 10px;
   height: 20px;
   border: none;
   box-shadow: -3px 3px 0 var(--color-verde);
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.containerInput textarea{
+.containerInput textarea {
   width: 90%;
   padding-left: 10px;
   height: 50px;
   border: none;
   box-shadow: -3px 3px 0 var(--color-verde);
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
 }
-.titleContact{
+.titleContact {
   font-size: 1.9rem;
   color: var(--color-verde);
   text-transform: uppercase;
@@ -100,7 +102,7 @@
   text-align: center;
   padding: 1rem 0;
 }
-.btn{
+.btn {
   margin: 1rem 0;
   border: none;
   padding: 0.3rem;
@@ -110,22 +112,22 @@
   font-style: normal;
   font-family: "Archivo", sans-serif;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--color-verde);
   color: var(--color-text);
 }
-.containerIcon{
+.containerIcon {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 2rem 0;
 }
-.containerIcon img{
+.containerIcon img {
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
-.containerFooter{
+.containerFooter {
   background-color: var(--color-black);
   color: var(--color-text);
   display: flex;
@@ -136,74 +138,84 @@
   gap: 3px;
   padding: 8px 0;
 }
-
-
-@media (min-width: 850px){
-
-.wrapper{
-  display: flex;
-  justify-content: space-around;
-}
-.containerInfo{
-  height: 300px;
-  padding: 1.5rem 1rem 0 1.5rem ;
-  margin-top: 30px;
-}
-.circle{
-  width: 42px;
-  height: 42px;
-}
-.containerInfo p{
-  font-size: 2rem;
-}
-.logoFooter{
-  width: 140px;
-  height: 70px;
-  left: 25px;
-  top: 60px;
-}
-.form{
-  padding: 2rem 0 0 2rem;
-  margin: 0 12px;
-  height: 450px;
-  width: 700px;
-}
-.titleContact{
-  font-size: 2.8rem;
-}
-.containerInput label{
-  font-size: 1.5rem;
-  padding: 1rem 0 0 0;
-}
-.containerInput input{
-  width: 90%;
-  padding-left: 10px;
-  height: 28px;
-  box-shadow: -4px 4px 0 var(--color-verde);
-}
-.btn{
-  margin: 1rem 0;
-  padding: 0.3rem;
-  margin-left: 430px;
-  font-size: 1.5rem;
-}
-.containerIcon{
-  justify-content: start;
-  gap: 10px;
-  margin: 2rem 10rem;
-}
-.containerIcon img{
-  width: 50px;
-  height: 50px;
-}
-
-.containerFooter{ 
-  display: flex;
-  flex-direction: row;
+.containerFooter a {
+  color: var(--color-text);
+  text-decoration: none;
   font-size: 0.8rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 1rem;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--color-amarillo);
+  box-shadow: 0 0 6px var(--color-amarillo);
+}
+
+@media (min-width: 850px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .containerInfo {
+    height: 300px;
+    padding: 1.5rem 1rem 0 1.5rem;
+    margin-top: 30px;
+  }
+  .circle {
+    width: 42px;
+    height: 42px;
+  }
+  .containerInfo p {
+    font-size: 2rem;
+  }
+  .logoFooter {
+    width: 140px;
+    height: 70px;
+    left: 25px;
+    top: 60px;
+  }
+  .form {
+    padding: 2rem 0 0 2rem;
+    margin: 0 12px;
+    height: 450px;
+    width: 700px;
+  }
+  .titleContact {
+    font-size: 2.8rem;
+  }
+  .containerInput label {
+    font-size: 1.5rem;
+    padding: 1rem 0 0 0;
+  }
+  .containerInput input {
+    width: 90%;
+    padding-left: 10px;
+    height: 28px;
+    box-shadow: -4px 4px 0 var(--color-verde);
+  }
+  .btn {
+    margin: 1rem 0;
+    padding: 0.3rem;
+    margin-left: 430px;
+    font-size: 1.5rem;
+  }
+  .containerIcon {
+    justify-content: start;
+    gap: 10px;
+    margin: 2rem 10rem;
+  }
+  .containerIcon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .containerFooter {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 1rem;
+  }
 }

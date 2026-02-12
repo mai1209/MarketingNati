@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 600,
       easing: 'ease-in-out-cubic',
       once: false,
       mirror: true,
@@ -72,7 +72,7 @@ function App() {
 
   return (
     <div className={style.container}>
-      <nav data-aos="fade-down" data-aos-delay="100">
+      <nav data-aos="fade-down" data-aos-delay="60">
         <img onClick={scrollToTop} className={style.logo} src="/logo.png" alt="logo" data-aos="zoom-in" data-aos-delay="300" />
         <div className={style.containerItem}>
           {menuItems.map((item, index) => {
