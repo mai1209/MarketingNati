@@ -127,6 +127,11 @@
   height: 40px;
   cursor: pointer;
 }
+
+.containerIcon img:hover {
+  filter: brightness(0.8);
+}
+
 .containerFooter {
   background-color: var(--color-black);
   color: var(--color-text);

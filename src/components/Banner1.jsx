@@ -5,73 +5,39 @@ import style from "../Styles/Banner1.module.css";
 
 function Banner1() {
   return (
-    <div>
-      <div className={style.container_banner}>
-        <div className={style.blue}>
-          <div className={style.container_all_text}>
-            <div className={style.container_text}>
-              <p className={style.textBlue1}>
-                Crea desde tu <br /> autenticidad
-              </p>
-            </div>
-            <div className={style.container_text}>
-              <p className={style.text2}>
-                Comunicá con <br /> intención
-              </p>
-            </div>
-            <div className={style.container_text}>
-              <p className={style.text3}>
-                Conecta <br /> desde lo humano
-              </p>
-            </div>
-          </div>
-          <div>
-            <p className={style.bottom_text}>
-              Te ayudo a ordenar ideas, comunicar con claridad y crecer con
-              estrategia y autenticidad
-            </p>
-          </div>
-        </div>
-
-        <div id="conóceme" className={style.container_text2}>
-          <h2 className={style.h2}>CONOCE MAS DE MI</h2>
-
+    <div className={style.banner}>
+      <div className={style.container}>
+        <img className={style.natiImg} src="/nati.png" alt="nati" />
+        <div>
+          <h2 className={style.title}>Sobre mi</h2>
           <p className={style.text}>
             Soy Natalia, asesora en marketing, comunicación y estrategia
-            digital.
+            digital. <br />
+            Mi camino comenzó con un emprendimiento propio en La Plata.
           </p>
-
           <p className={style.text}>
-            Mi camino comenzó con un emprendimiento propio en La Plata. <br />{" "}
             Viajar, conocer culturas y transitar la maternidad en pandemia
             despertaron mi vocación por el mundo digital.
           </p>
-
           <p className={style.text}>
             Hoy acompaño a marcas, profesionales y empresas que desean crecer de
-            forma auténtica, estratégica y alineada a su esencia.
-          </p>
-
-          <p className={style.text}>
+            forma auténtica, estratégica y alineada a su esencia. <br />
             Creo en el poder de la conexión humana, la comunicación con
             propósito y la co-creación como motor de transformación
           </p>
-
-          <div className={style.line}></div>
+          <div className={style.containerAdvice}>
+            <p>Comunicá <br /> con intención</p>
+            <p>Crea desde tu <br /> autenticidad</p>
+            <p>Conecta desde  <br />lo humano</p>
+          </div>
         </div>
       </div>
+      <p className={style.textBottom}>Crece con estrategia, foco y autenticidad</p>
 
       <div id="enfoque" className={style.background}>
-        <div
-          className={style.container_advice}
-     
-        >
-          <img
-            src="./img/imgAdvice.png"
-            alt="fondoadvice"
-      
-          />
-          <p className={style.text8} >
+        <div className={style.container_advice}>
+          <img src="./img/imgAdvice.png" alt="fondoadvice" />
+          <p className={style.text8}>
             Acompaño a empresas, emprendedores y freelancers a construir
             estrategias de marketing y comunicación alineadas con su propósito.{" "}
             <br /> Estoy acá para ayudarte a ordenar, priorizar y comunicar con
@@ -80,7 +46,7 @@ function Banner1() {
           </p>
         </div>
         <div>
-          <p className={style.p} >
+          <p className={style.p}>
             Todo adaptado <br /> a vos, con una <br />
             mirada <br /> cercana y <br />
             personalizada
