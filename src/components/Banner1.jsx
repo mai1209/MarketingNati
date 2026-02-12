@@ -64,14 +64,12 @@ function Banner1() {
       <div id="enfoque" className={style.background}>
         <div
           className={style.container_advice}
-          data-aos="fade-up"
-          data-aos-delay="10"
+     
         >
           <img
             src="./img/imgAdvice.png"
             alt="fondoadvice"
-            data-aos="zoom-out"
-            data-aos-delay="20"
+      
           />
           <p className={style.text8} >
             Acompaño a empresas, emprendedores y freelancers a construir
