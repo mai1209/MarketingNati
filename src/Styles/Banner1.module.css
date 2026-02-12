@@ -158,7 +158,7 @@ span {
 
 .containerWhatsApp {
   display: flex;
-  margin: 2rem 1rem;
+  margin: 2rem 1rem 0;
   gap: 0.5rem;
   background-color: var(--color-verde);
   border-radius: 12px;

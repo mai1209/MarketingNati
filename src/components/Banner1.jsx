@@ -73,7 +73,7 @@ function Banner1() {
             data-aos="zoom-out"
             data-aos-delay="20"
           />
-          <p className={style.text8} data-aos="fade-up" data-aos-delay="30">
+          <p className={style.text8} >
             Acompaño a empresas, emprendedores y freelancers a construir
             estrategias de marketing y comunicación alineadas con su propósito.{" "}
             <br /> Estoy acá para ayudarte a ordenar, priorizar y comunicar con
@@ -82,7 +82,7 @@ function Banner1() {
           </p>
         </div>
         <div>
-          <p className={style.p} data-aos="fade-left" data-aos-delay="40">
+          <p className={style.p} >
             Todo adaptado <br /> a vos, con una <br />
             mirada <br /> cercana y <br />
             personalizada
