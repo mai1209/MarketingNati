@@ -125,6 +125,13 @@
   .container {
     margin-top: 3rem;
     padding: 4rem 3rem;
+    max-width: 95%;
+  }
+
+  .wrapper{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
   }
 
   .title {
@@ -163,4 +170,14 @@
   .img img {
     margin-top: 0rem;
   }
+}
+
+
+@media (min-width: 1800px){
+  .container {
+    margin-top: 3rem;
+    padding: 4rem 3rem;
+    max-width: 90%;
+  }
+
 }

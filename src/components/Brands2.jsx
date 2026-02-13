@@ -74,7 +74,8 @@ function Brands2() {
   ];
 
   return (
-    <div id="testimonios" className={style.container}>
+  <div className={style.wrapper}>
+      <div id="testimonios" className={style.container}>
       <h2 className={style.title} data-aos="fade-down">
         TESTIMONIOS
       </h2>
@@ -113,6 +114,7 @@ function Brands2() {
         para acompañarte.
       </p>
     </div>
+  </div>
   );
 }
 
