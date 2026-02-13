@@ -113,7 +113,7 @@ function App() {
             data-aos="fade-up"
             data-aos-delay="800"
           >
-            2025 edition
+            2026 edition
           </p>
         </div>
         <div className={style.containerDescription}>
