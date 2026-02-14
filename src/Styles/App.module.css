@@ -158,11 +158,35 @@ nav {
   cursor: pointer;
 }
 
-.scrollToTop.show {
+
+.scrollToTopWp {
+  position: fixed;
+  bottom: 90px;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-verde);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1000;
+  font-size: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.scrollToTop.show,
+.scrollToTopWp.show{
   opacity: 1;
 }
 
-.scrollToTop:hover {
+.scrollToTop:hover ,
+.scrollToTopWp:hover{
   background-color: var(--color-amarillo);
 }
 

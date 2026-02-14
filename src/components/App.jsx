@@ -122,7 +122,7 @@ function App() {
               <div
                 key={index}
                 data-aos="fade-up"
-                data-aos-delay={90 + index * 15 }
+                data-aos-delay={90 + index * 15}
                 data-aos-anchor-placement="top-bottom"
               >
                 <h3>{item.title}</h3>
@@ -140,6 +140,17 @@ function App() {
       >
         ↑
       </div>
+      <a
+        href="https://wa.me/5492213096523"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}
+        onClick={scrollToTop}
+        data-aos="fade-up"
+        data-aos-delay="10"
+      >
+        <img src="wpBlanco.png" alt="wp" />
+      </a>
     </div>
   );
 }
