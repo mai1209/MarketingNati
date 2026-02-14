@@ -140,17 +140,23 @@ function App() {
       >
         ↑
       </div>
-      <a
-        href="https://wa.me/5492213096523"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}
-        onClick={scrollToTop}
-        data-aos="fade-up"
-        data-aos-delay="10"
-      >
-        <img src="wpBlanco.png" alt="wp" />
-      </a>
+      <div>
+        <a
+          href="https://wa.me/5492213096523"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-aos="fade-up"
+          data-aos-delay="10"
+          title="Abrir WhatsApp"
+          aria-label="Abrir WhatsApp"
+        >
+          <img
+            className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}
+            src="wpBlanco.png"
+            alt="WhatsApp"
+          />
+        </a>
+      </div>
     </div>
   );
 }

@@ -161,23 +161,34 @@ nav {
 
 .scrollToTopWp {
   position: fixed;
-  bottom: 90px;
+  bottom: 70px;
   right: 12px;
-  width: 50px;
-  height: 50px;
-  background-color: var(--color-verde);
-  color: white;
-  border-radius: 50%;
+  /* circular button */
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform 0.15s ease;
   z-index: 1000;
-  font-size: 25px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-verde);
+  border-radius: 50%;
+}
+
+.scrollToTopWp img {
+  /* keep the inner icon comfortably smaller than the button */
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  display: block;
+}
+
+.scrollToTopWp:hover {
+  transform: translateY(-3px) scale(1.03);
+  background-color: var(--color-amarillo);
 }
 
 .scrollToTop.show,
@@ -185,8 +196,8 @@ nav {
   opacity: 1;
 }
 
-.scrollToTop:hover ,
-.scrollToTopWp:hover{
+.scrollToTop:hover 
+{
   background-color: var(--color-amarillo);
 }
 
@@ -257,4 +268,18 @@ nav {
     width: 50px;
     height: 50px;
   }
+
+.scrollToTopWp {
+  width: 50px;
+  height: 50px;
+  bottom: 90px;
+}
+
+.scrollToTopWp img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  display: block;
+
+}
 }
