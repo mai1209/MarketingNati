@@ -25,7 +25,7 @@ function Brands2() {
       img: process.env.PUBLIC_URL + "/C21Busaniche.png",
       title: "CENTURY 21 BUSANICHE",
       subtitle:
-        "“Es lindo sentirse acompañada en este proceso de búsqueda y sobre todo de cambio laboral para llevar a Abocadito a otro nivel”",
+        "“Excelente persona y profesional! En los equipos hay personas que suman y algunos restan. Naty es de las que multiplican!! Vamos por un maravilloso 2026!!!”",
       number: "03",
     },
     {
