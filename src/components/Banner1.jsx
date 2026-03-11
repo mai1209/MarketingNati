@@ -5,7 +5,7 @@ import style from "../Styles/Banner1.module.css";
 
 function Banner1() {
   return (
-    <div className={style.banner}>
+    <div id="conóceme" className={style.banner}>
       <div className={style.container}>
         <img className={style.natiImg} src="/nati.png" alt="nati" />
         <div>
