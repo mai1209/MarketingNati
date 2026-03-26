@@ -8,17 +8,13 @@ function App() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.pageYOffset > 300);
     };
+
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Scroll suave al inicio
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -28,15 +24,20 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 600,
-      easing: "ease-in-out-cubic",
+      duration: 650,
+      easing: "ease-out-cubic",
       once: false,
       mirror: true,
-      offset: 120,
+      offset: 90,
     });
   }, []);
 
-  const menuItems = ["Conóceme", "Enfoque", "Testimonios", "Contacto"];
+  const menuItems = [
+    { label: "Conoceme", id: "conoceme" },
+    { label: "Enfoque", id: "enfoque" },
+    { label: "Testimonios", id: "testimonios" },
+    { label: "Contacto", id: "contacto" },
+  ];
 
   const textcontent = [
     {
@@ -63,100 +64,117 @@ function App() {
 
   return (
     <div className={style.container}>
-      <nav data-aos="fade-down" data-aos-delay="60">
+      <nav className={style.nav} data-aos="fade-down">
         <img
           onClick={scrollToTop}
           className={style.logo}
           src="/logo.png"
           alt="logo"
-          data-aos="zoom-in"
-          data-aos-delay="300"
         />
+
         <div className={style.containerItem}>
-          {menuItems.map((item, index) => {
-            const itemId = item.toLowerCase().replace(/\s+/g, "-");
-            return (
-              <div
-                key={index}
-                data-aos="fade-left"
-                data-aos-delay={400 + index * 100}
-              >
-                <a href={`#${itemId}`}>{item}</a>
-              </div>
-            );
-          })}
+          {menuItems.map((item, index) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              data-aos="fade-left"
+              data-aos-delay={180 + index * 70}
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       </nav>
-      <div className={style.containerHero}>
-        <div
-          className={style.backgroundImg}
-          data-aos="zoom-out"
-          data-aos-delay="500"
-        >
-          <div className={style.textHero}>
-            <h2 data-aos="fade-right" data-aos-delay="600">
-              natalia <br /> lofeudo
-            </h2>
-            <div
-              className={style.textHeroP}
-              data-aos="fade-left"
-              data-aos-delay="700"
-            >
-              <p>creá</p>
-              <p>marketing</p>
-              <p>para</p>
-              <p>vos</p>
+
+      <main className={style.main}>
+        <section id="conoceme" className={style.containerHero}>
+          <div
+            className={style.backgroundImg}
+            data-aos="zoom-out"
+            data-aos-delay="120"
+          >
+            <div className={style.heroOverlay}></div>
+
+            <div className={style.heroInner}>
+              <div className={style.textHero}>
+                <h1 data-aos="fade-right" data-aos-delay="240">
+                  natalia <br /> lofeudo
+                </h1>
+
+                <div
+                  className={style.textHeroP}
+                  data-aos="fade-left"
+                  data-aos-delay="320"
+                >
+                  <p>creá</p>
+                  <p>marketing</p>
+                  <p>para</p>
+                  <p>vos</p>
+                </div>
+              </div>
+
+              <div
+                className={style.heroDescription}
+                data-aos="fade-up"
+                data-aos-delay="420"
+              >
+                <p>
+                  Estrategia, comunicación y marketing para proyectos que buscan
+                  crecer con autenticidad, foco y una identidad clara.
+                </p>
+              </div>
+
+              <p
+                className={style.textBottom}
+                data-aos="fade-up"
+                data-aos-delay="520"
+              >
+                2026 edition
+              </p>
             </div>
           </div>
-          <p
-            className={style.textBottom}
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            2026 edition
-          </p>
-        </div>
-        <div className={style.containerDescription}>
-          {textcontent.map((item, index) => {
-            return (
-              <div
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={90 + index * 15}
-                data-aos-anchor-placement="top-bottom"
-              >
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-      <div
+
+          <div className={style.containerDescription}>
+            {textcontent.map((item, index) => {
+              return (
+                <article
+                  key={index}
+                  className={style.serviceCard}
+                  data-aos="fade-up"
+                  data-aos-delay={80 + index * 60}
+                >
+                  <div className={style.serviceNumber}>
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      </main>
+
+      <button
+        type="button"
         className={`${style.scrollToTop} ${isVisible ? style.show : ""}`}
         onClick={scrollToTop}
-        data-aos="fade-up"
-        data-aos-delay="10"
+        title="Volver arriba"
+        aria-label="Volver arriba"
       >
         ↑
-      </div>
-      <div>
-        <a
-          href="https://wa.me/5492213096523"
-          target="_blank"
-          rel="noopener noreferrer"
-          data-aos="fade-up"
-          data-aos-delay="10"
-          title="Abrir WhatsApp"
-          aria-label="Abrir WhatsApp"
-        >
-          <img
-            className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}
-            src="wpBlanco.png"
-            alt="WhatsApp"
-          />
-        </a>
-      </div>
+      </button>
+
+      <a
+        href="https://wa.me/5492213096523"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}
+        title="Abrir WhatsApp"
+        aria-label="Abrir WhatsApp"
+      >
+        <img src="/wpBlanco.png" alt="WhatsApp" />
+      </a>
     </div>
   );
 }

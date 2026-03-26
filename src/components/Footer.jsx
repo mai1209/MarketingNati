@@ -2,7 +2,6 @@ import style from "../Styles/Footer.module.css";
 import Swal from "sweetalert2";
 
 function Footer() {
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -11,13 +10,12 @@ function Footer() {
     const email = form.email.value.trim();
     const message = form.message.value.trim();
 
-    // Validaciones
     if (!name || !email || !message) {
       Swal.fire({
         title: "Campos requeridos",
         text: "Por favor, completá todos los campos obligatorios.",
         icon: "warning",
-        confirmButtonColor: "#FF1493",
+        confirmButtonColor: "#1A535C",
       });
       return;
     }
@@ -27,7 +25,7 @@ function Footer() {
         title: "Email inválido",
         text: "Ingresá un correo electrónico válido.",
         icon: "warning",
-        confirmButtonColor: "#FF1493",
+        confirmButtonColor: "#1A535C",
       });
       return;
     }
@@ -43,6 +41,8 @@ function Footer() {
       icon: "info",
       showConfirmButton: false,
       allowOutsideClick: false,
+      background: "#ffffff",
+      color: "#1A535C",
     });
 
     try {
@@ -63,52 +63,61 @@ function Footer() {
           color: "#fff",
           confirmButtonColor: "#1A535C",
           confirmButtonText: "Genial",
-          iconColor: "#1A535C",
+          iconColor: "#B0AD12",
         });
       } else {
         throw new Error(data.message || "Error al enviar");
       }
-
     } catch (error) {
       console.error("Web3Forms error:", error);
       Swal.fire({
         title: "Error",
         text: "No se pudo enviar el mensaje. Intentá nuevamente.",
         icon: "error",
-        confirmButtonColor: "#FF1493",
+        confirmButtonColor: "#1A535C",
       });
     }
   };
 
   return (
-    <div id="contacto" className={style.container}>
+    <footer id="contacto" className={style.container}>
       <div className={style.wrapper}>
-
         <div className={style.containerContact1}>
-          <img className={style.logoFooter} src="./logo.png" alt="logo" />
+          <img className={style.logoFooter} src="/logo.png" alt="logo" />
 
           <div className={style.containerInfo}>
             <div className={style.circle}></div>
+
             <div className={style.text}>
-              <p>tu proyecto con</p>
-              <p>estrategia, claridad y</p>
-              <p>autenticidad</p>
+              <span className={style.kicker}>Contacto</span>
+              <p>Tu proyecto con</p>
+              <p>estrategia, claridad</p>
+              <p>y autenticidad</p>
             </div>
           </div>
         </div>
 
         <div className={style.containerContact}>
-          <h3 className={style.titleContact}>Contactame</h3>
+          <div className={style.contactHeading}>
+            <span className={style.kicker}>Hablemos</span>
+            <h3 className={style.titleContact}>Contactame</h3>
+            <p className={style.contactIntro}>
+              Si querés ordenar tu comunicación, potenciar tu marca o empezar a
+              construir una estrategia más clara, escribime.
+            </p>
+          </div>
 
           <form onSubmit={handleSubmit} className={style.form}>
-            <div className={style.containerInput}>
-              <label htmlFor="name">Nombre completo</label>
-              <input type="text" name="name" id="name" required />
-            </div>
+            <div className={style.formGrid}>
+              <div className={style.containerInput}>
+                <label htmlFor="name">Nombre completo</label>
+                <input type="text" name="name" id="name" required />
+              </div>
 
-            <div className={style.containerInput}>
-              <label htmlFor="email">Correo electrónico</label>
-              <input type="email" name="email" id="email" required />
+              <div className={style.containerInput}>
+                <label htmlFor="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" required />
+              </div>
             </div>
 
             <div className={style.containerInput}>
@@ -117,7 +126,7 @@ function Footer() {
             </div>
 
             <div className={style.containerInput}>
-              <label htmlFor="message">¿EN QUÉ PUEDO AYUDARTE?</label>
+              <label htmlFor="message">¿En qué puedo ayudarte?</label>
               <textarea name="message" id="message" required></textarea>
             </div>
 
@@ -129,40 +138,58 @@ function Footer() {
       </div>
 
       <div className={style.containerIcon}>
-        <a href="https://www.facebook.com/share/1CNKujuGon/?mibextid=wwXIfr">
-          <img src="./Facebook.png" alt="facebook" />
+        <a
+          href="https://www.facebook.com/share/1CNKujuGon/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <img src="/Facebook.png" alt="facebook" />
         </a>
+
         <a
           href="https://wa.me/5492213096523"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="WhatsApp"
         >
-          <img src="./WhatsApp.png" alt="whatsapp" />
+          <img src="/WhatsApp.png" alt="whatsapp" />
         </a>
+
         <a
           href="https://www.linkedin.com/in/natalialofeudo/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          <img src="./LinkedIn.png" alt="linkedin" />
+          <img src="/LinkedIn.png" alt="linkedin" />
         </a>
+
         <a
           href="https://www.instagram.com/creamarketingparavos/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
         >
-          <img src="./Instagram.png" alt="instagram" />
+          <img src="/Instagram.png" alt="instagram" />
         </a>
       </div>
 
       <div className={style.containerFooter}>
         <p>
-          Copyright Natalia Lofeudo (Creá Marketing para vos) - 2026.
+          Copyright Natalia Lofeudo (Creá Marketing para Vos) - 2026.
           Todos los derechos reservados.
         </p>
-        <a href="https://www.letsbuilditcodex.com" target="_blank" rel="noopener noreferrer">Creado por CODEX Corporation & Business R</a>
+
+        <a
+          href="https://www.letsbuilditcodex.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Creado por CODEX Corporation & Business R
+        </a>
       </div>
-    </div>
+    </footer>
   );
 }
 
