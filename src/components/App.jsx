@@ -5,6 +5,7 @@
 
   function App() {
     const [isVisible, setIsVisible] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
       const toggleVisibility = () => {
@@ -72,11 +73,30 @@
             alt="logo"
           />
 
-          <div className={style.containerItem}>
+          <button
+            type="button"
+            className={`${style.navBurger} ${
+              menuOpen ? style.navBurgerOpen : ""
+            }`}
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Abrir menú"
+            aria-expanded={menuOpen}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div
+            className={`${style.containerItem} ${
+              menuOpen ? style.containerItemOpen : ""
+            }`}
+          >
             {menuItems.map((item, index) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
+                onClick={() => setMenuOpen(false)}
                 data-aos="fade-left"
                 data-aos-delay={180 + index * 70}
               >
@@ -87,7 +107,7 @@
         </nav>
 
         <main className={style.main}>
-          <section id="conoceme" className={style.containerHero}>
+          <section id="inicio" className={style.containerHero}>
             <div
               className={style.backgroundImg}
               data-aos="zoom-out"
@@ -122,6 +142,16 @@
                     Estrategia, comunicación y marketing para proyectos que buscan
                     crecer con autenticidad, foco y una identidad clara.
                   </p>
+
+                  <a
+                    className={style.heroCta}
+                    href="https://wa.me/5492213096523"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/wpBlanco.png" alt="" aria-hidden="true" />
+                    Trabajemos juntos
+                  </a>
                 </div>
 
                 <p

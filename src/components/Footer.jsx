@@ -86,8 +86,6 @@ function Footer() {
           <img className={style.logoFooter} src="/logo.png" alt="logo" />
 
           <div className={style.containerInfo}>
-            <div className={style.circle}></div>
-
             <div className={style.text}>
               <span className={style.kicker}>Contacto</span>
               <p>Tu proyecto con</p>
