@@ -135,7 +135,7 @@ html {
 }
 
 .backgroundImg {
-  background-image: url("../../public/imgHero.png");
+  background-image: url("../../public/imgHero.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,5 +1,6 @@
 import style from "../Styles/Footer.module.css";
 import Swal from "sweetalert2";
+import { whatsappLink } from "../whatsapp";
 
 function Footer() {
   const handleSubmit = async (e) => {
@@ -83,7 +84,13 @@ function Footer() {
     <footer id="contacto" className={style.container}>
       <div className={style.wrapper}>
         <div className={style.containerContact1}>
-          <img className={style.logoFooter} src="/logo.png" alt="logo" />
+          <img
+            className={style.logoFooter}
+            src="/logo.png"
+            alt="Creá Marketing para Vos"
+            loading="lazy"
+            decoding="async"
+          />
 
           <div className={style.containerInfo}>
             <div className={style.text}>
@@ -146,7 +153,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://wa.me/5492213096523"
+          href={whatsappLink("¡Hola Nati! 👋 Vi tu web y quiero contactarte.")}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"

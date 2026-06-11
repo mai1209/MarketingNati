@@ -2,6 +2,7 @@
   import AOS from "aos";
   import "aos/dist/aos.css";
   import { useEffect, useState } from "react";
+  import { whatsappLink } from "../whatsapp";
 
   function App() {
     const [isVisible, setIsVisible] = useState(false);
@@ -145,7 +146,9 @@
 
                   <a
                     className={style.heroCta}
-                    href="https://wa.me/5492213096523"
+                    href={whatsappLink(
+                      "¡Hola Nati! 👋 Vi tu web y me gustaría que trabajemos juntos. ¿Cómo arrancamos?"
+                    )}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -196,7 +199,7 @@
         </button>
 
         <a
-          href="https://wa.me/5492213096523"
+          href={whatsappLink("¡Hola Nati! 👋 Vi tu web y quiero hacerte una consulta.")}
           target="_blank"
           rel="noopener noreferrer"
           className={`${style.scrollToTopWp} ${isVisible ? style.show : ""}`}

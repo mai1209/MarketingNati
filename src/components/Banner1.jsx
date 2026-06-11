@@ -1,4 +1,5 @@
 import style from "../Styles/Banner1.module.css";
+import { whatsappLink } from "../whatsapp";
 
 function Banner1() {
   return (
@@ -6,7 +7,13 @@ function Banner1() {
       <div id="conoceme" className={style.aboutSection}>
         <div className={style.container}>
           <div className={style.imageWrap}>
-            <img className={style.natiImg} src="/nati.png" alt="Natalia" />
+            <img
+              className={style.natiImg}
+              src="/nati.png"
+              alt="Natalia Lofeudo"
+              loading="lazy"
+              decoding="async"
+            />
             <div className={style.imageCard}>
               <span>Marketing & estrategia</span>
               <p>Comunicación con intención, autenticidad y foco.</p>
@@ -67,7 +74,12 @@ function Banner1() {
       <div id="enfoque" className={style.background}>
         <div className={style.container_advice}>
           <div className={style.visualWrap}>
-            <img src="/img/imgAdvice.png" alt="Enfoque estratégico" />
+            <img
+              src="/img/imgAdvice.jpg"
+              alt="Enfoque estratégico"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div className={style.infoPanel}>
@@ -91,7 +103,9 @@ function Banner1() {
 
           <a
             className={style.containerWhatsApp}
-            href="https://wa.me/5492213096523"
+            href={whatsappLink(
+              "¡Hola Nati! 👋 Me interesa tu enfoque y quiero saber más sobre cómo trabajás."
+            )}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -87,7 +87,13 @@ function Brands2() {
               >
                 <div className={style.cardHeader}>
                   <div className={style.avatarWrapper}>
-                    <img src={item.img} alt={item.title} className={style.avatar} />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className={style.avatar}
+                      loading="lazy"
+                      decoding="async"
+                    />
                     <span className={style.badge}>{item.number}</span>
                   </div>
                   <h3 className={style.brandName}>{item.title}</h3>
